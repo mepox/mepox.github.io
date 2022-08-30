@@ -3,7 +3,7 @@ function onStart() {
 	
 	addTitle("Projects");
 	
-	var projectGroupTitles = [ "Commercial Games", "Recent on GitHub" ];
+	var projectGroupTitles = [ "Commercial Games", "Recent projects on GitHub" ];
 	generateProjectGroups(projectGroupTitles);
 	
 	/* Brick Maniac */
