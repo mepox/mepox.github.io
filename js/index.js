@@ -36,7 +36,7 @@ function onStart() {
 					"<p>I was responsible for the whole development of the game, including " +
 					"planning the game's framework, developing the App, managing the Developer Account and marketing the game.</p>" +
 					"<p>The game reached about 1000 downloads.</p>" +
-					"<p><label>Tech Summary:</label>" +
+					"<p><label><b>Tech Summary:</b></label>" +
 					"<ul>" +
 					"<li>Language: C# and Java (Android)</li>" +
 					"<li>Game engine: Unity game engine</li>" +
@@ -55,7 +55,7 @@ function onStart() {
 					"<p>I was responsible to plan the game's framework, develop half of the code and integrate the Facebook API. " +
 					"Also I was responsible to manage the Developer Account and market our game.</p>" +
 					"<p>The game reached about 500 downloads.</p>" +
-					"<p><label>Tech Summary:</label>" +
+					"<p><label><b>Tech Summary:</b></label>" +
 					"<ul>" +
 					"<li>Language: C# and Java (Android)</li>" +
 					"<li>Game engine: Unity game engine</li>" +
@@ -69,8 +69,8 @@ function onStart() {
 	
 	var title = "URL Shortener";
 	var shortdesc = "A simple URL Shortener made with Spring Boot.";
-	var longdesc = "<p>" +
-					"<label>Summary:</label>" +
+	var longdesc = "<p></p>" +
+					"<p><label><b>Tech Summary:</b></label>" +
 					"<ul>" +
 					"<li>Language: Java</li>" +
 					"<li>Framework: Spring Boot</li>" +
@@ -84,8 +84,8 @@ function onStart() {
 	
 	var title = "Workout Tracker";
 	var shortdesc = "A simple Workout Tracker made with Spring Boot.";
-	var longdesc = "<p>" +
-					"<label>Summary:</label>" +
+	var longdesc = "<p></p>" +
+					"<p><label><b>Tech Summary:</b></label>" +
 					"<ul>" +
 					"<li>Language: Java</li>" +
 					"<li>Framework: Spring Boot</li>" +
