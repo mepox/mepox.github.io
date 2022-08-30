@@ -1,0 +1,56 @@
+body {
+	background-color: #17202A;
+}
+
+h1, h2, h3, p {
+	color: white;
+}
+
+h1 {
+	text-align: center;
+	font-size: 300%;
+}
+
+h3 {
+	font-size: 150%;
+}
+
+ul {
+	color: white;
+	list-style: inside;
+	list-style-type: square;
+}
+
+hr {
+	width: 25%;
+}
+
+img {
+	margin-left: 5px;	
+	border-radius: 5px;
+}
+
+.project-group {
+	text-align: center;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.project {
+	border: 2px solid white;
+	border-radius: 10px;
+}
+
+.project-longdesc {
+	width: 80%;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.project-photo {
+	width: auto;
+	height: 226px;
+}
