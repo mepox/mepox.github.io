@@ -39,7 +39,7 @@ img {
 
 @media (max-width: 1300px){
   .project-group {
-    width: 80%;
+    width: 95%;
   }
 }
 
@@ -49,13 +49,13 @@ img {
 }
 
 .project-shortdesc {
-	width: 90%;
+	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .project-longdesc {
-	width: 80%;
+	width: 95%;
 	text-align: left;
 	margin-left: auto;
 	margin-right: auto;
