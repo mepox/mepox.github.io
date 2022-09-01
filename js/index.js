@@ -12,6 +12,8 @@ function onStart() {
 	var shortdesc = "Workout Tracker made with Spring Boot.";
 	var longdesc = "<p>A simple workout tracker where the users are able to log their workouts and also create their own exercises. </p>" +
 					"<p>Uses REST API design to handle the clients' (GET, POST, PUT, DELETE) requests. This could also easily provide a backend for a mobile app. </p>" +
+					"<p>On GitHub: <a href='https://github.com/mepox/simple-workouttracker'>https://github.com/mepox/simple-workouttracker</a></p>" +
+					"<p>The app is hosted on Heroku: <a href='https://spring-workouttracker.herokuapp.com'>https://spring-workouttracker.herokuapp.com</a></p>" +
 					"<p><label><b>Tech Summary:</b></label>" +
 					"<ul>" +
 					"<li>Language: Java</li>" +
@@ -30,6 +32,8 @@ function onStart() {
 	var shortdesc = "URL Shortener made with Spring Boot.";
 	var longdesc = "<p>It was a small project to create a simple URL shortener service as I was curious how they work and how to make one. </p>" +
 					"<p>Uses REST API design to handle the clients' (GET, POST, DELETE) requests. </p>" +
+					"<p>On GitHub: <a href='https://github.com/mepox/simple-urlshortener'>https://github.com/mepox/simple-urlshortener</a></p>" +
+					"<p>The app is hosted on Heroku: <a href='https://spring-urlshortener.herokuapp.com'>https://spring-urlshortener.herokuapp.com</a></p>" +
 					"<p><label><b>Tech Summary:</b></label>" +
 					"<ul>" +
 					"<li>Language: Java</li>" +
