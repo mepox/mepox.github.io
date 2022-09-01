@@ -10,9 +10,9 @@ function onStart() {
 	
 	var title = "Workout Tracker";
 	var shortdesc = "Workout Tracker made with Spring Boot.";
-	var longdesc = "<p>Another hobby project, this time to create a workout tracker where the users can log their workouts and also add new custom exercises. </p>" +
-					"<p>Uses REST API design to handle the client's (GET, POST, PUT, DELETE) requests which could also provide a backend for a mobile app. </p>" +
-					"<br><p><label><b>Tech Summary:</b></label>" +
+	var longdesc = "<p>A simple workout tracker where the users are able to log their workouts and also create their own exercises. </p>" +
+					"<p>Uses REST API design to handle the clients' (GET, POST, PUT, DELETE) requests. This could also easily provide a backend for a mobile app. </p>" +
+					"<p><label><b>Tech Summary:</b></label>" +
 					"<ul>" +
 					"<li>Language: Java</li>" +
 					"<li>Framework: Spring Boot (with Spring Security)</li>" +
@@ -28,9 +28,9 @@ function onStart() {
 	
 	var title = "URL Shortener";
 	var shortdesc = "URL Shortener made with Spring Boot.";
-	var longdesc = "<p>It was small hobby project to create a simple URL shortener service as I was curious how they work and how to make one. </p>" +
-					"<p>Uses REST API design to handle the client's (GET, POST, DELETE) requests. </p>" +
-					"<br><p><label><b>Tech Summary:</b></label>" +
+	var longdesc = "<p>It was a small project to create a simple URL shortener service as I was curious how they work and how to make one. </p>" +
+					"<p>Uses REST API design to handle the clients' (GET, POST, DELETE) requests. </p>" +
+					"<p><label><b>Tech Summary:</b></label>" +
 					"<ul>" +
 					"<li>Language: Java</li>" +
 					"<li>Framework: Spring Boot</li>" +
@@ -45,13 +45,13 @@ function onStart() {
 	/* Game Of Moves */
 	
 	var title = "Game Of Moves (2019)";
-	var shortdesc = "An Android game developed in a team of two.";
-	var longdesc = "<p>The goal was to make a free game which is challenging but slow paced which is much more suited for a mobile game. " +
-					"The game was completely free and supported by full screen ads at the end of each level. Users were able to remove the ads by paying a small fee.</p>" +
-					"<p>I was responsible to plan the game's framework, develop half of the code and integrate the Facebook API. " +
-					"Also I was responsible to manage the Developer Account and market our game.</p>" +
+	var shortdesc = "Android game developed in a team of two.";
+	var longdesc = "<p>The goal was to make a game which is challenging but also slow paced which is much more suited for a mobile game. </p>" +
+					"<p><b>Game Of Moves</b> is a puzzle game where the players has to move all the boxes to the destination zones however each boxes has limited moves. </p>" +
+					"<p>I was responsible for planning the game's framework, developing half of the code and integrating the Facebook API so the users are able share their progress on Social Media. " +
+					"Also I was responsible for managing the Play Store's Developer Account (building and uploading the app) and marketing our game. </p>" +
 					"<p>The game reached about 500 downloads.</p>" +
-					"<br><p><label><b>Tech Summary:</b></label>" +
+					"<p><label><b>Tech Summary:</b></label>" +
 					"<ul>" +
 					"<li>Language: C# and Java (Android)</li>" +
 					"<li>Game engine: Unity game engine</li>" +
@@ -64,14 +64,14 @@ function onStart() {
 	/* Bouncy Ball */
 	
 	var title = "Bouncy Ball (2016)";
-	var shortdesc = "An Android game developed by myself.";
-	var longdesc = "<p>The goal was to make a free game where the user can play endlessly but once the user dies in the game, it resets back to the start. " +
-					"This encourage the users to keep coming back to the game and try to beat their own previous highscores. " +
-					"Facebook API was also integrated in the App so the users were able to share their highscores on Social Media to compete with each other. </p>" +
+	var shortdesc = "Android game developed by myself.";
+	var longdesc = "<p>The goal was to make an addicting game where the users are keep coming back to try to beat their previous highscores. </p>" +
+					"<p><b>Bouncy Ball</b> is an action game, where the players has to jump higher and higher by tapping the screen and avoid the dangerous spikes. </p>" +					
 					"<p>I was responsible for the whole development of the game, including " +
-					"planning the game's framework, developing the App, managing the Developer Account and marketing the game.</p>" +
+					"planning the game's framework, coding the core gameplay and integrating the Facebook API so the users are able to share their highscores on Social Media. " +
+					"Also, managing the Play Store's Developer Account (building and uploading the app) and marketing the game.</p>" +
 					"<p>The game reached about 1000 downloads.</p>" +
-					"<br><p><label><b>Tech Summary:</b></label>" +
+					"<p><label><b>Tech Summary:</b></label>" +
 					"<ul>" +
 					"<li>Language: C# and Java (Android)</li>" +
 					"<li>Game engine: Unity game engine</li>" +
@@ -84,14 +84,13 @@ function onStart() {
 	/* Brick Maniac */
 	
 	var title = "Brick Maniac (2014)";
-	var shortdesc = "An Android game developed in a team of two.";
-	var longdesc =  "<p>The goal was to make a classic brick breaker game which is much more polished than the rest of the similar games in the Play Store. " + 
-					"We made a free version of the game which contained banner ads and limited levels. " + 
-					"Also we had a paid (pro) version which was completely ad free and all the levels were available. </p>" +
-					"<p>I was responsible to plan out the game's framework and to develop half of the game's code. " +
-					"Also, as I was in charge to manage our Play Store's Developer Account I had to build a separate package (free and paid) from the game and upload them.</p>" +
+	var shortdesc = "Android game developed in a team of two.";
+	var longdesc =  "<p>The goal was to make a classic brick breaker game which is much more polished than the rest of the similar games in the Play Store. </p>" +				 
+					"<p><b>Brick Maniac</b> is a classic brick breaker game, where the users has to destroy all the bricks with the ball to complete the levels. </p>" +
+					"<p>I was responsible for planning the game's framework and developing half of the game's code. " +
+					"Also, I was responsible for managing the Play Store's Developer Account (building and uploading the app). </p>" +
 					"<p>We have reached about 500 downloads.</p>" +
-					"<br><p><label><b>Tech Summary:</b></label>" +
+					"<p><label><b>Tech Summary:</b></label>" +
 					"<ul>" +
 					"<li>Language: Java (Android)</li>" +
 					"<li>Game engine: Written from scratch</li>" +
