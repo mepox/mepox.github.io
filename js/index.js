@@ -6,33 +6,39 @@ function onStart() {
 	var projectGroupTitles = [ "Recent projects on GitHub", "Commercial Projects" ];
 	generateProjectGroups(projectGroupTitles);
 	
-		/* URL Shortener */
-	
-	var title = "URL Shortener";
-	var shortdesc = "A simple URL Shortener made with Spring Boot.";
-	var longdesc = "<p></p>" +
-					"<p><label><b>Tech Summary:</b></label>" +
-					"<ul>" +
-					"<li>Language: Java</li>" +
-					"<li>Framework: Spring Boot</li>" +
-					"<li>Version control: Git</li></ul></p>";
-	var directory = "projects/urlshortener";
-	var photosName = [ "screenshot.jpg" ];
-	
-	addProject(0, title, shortdesc, longdesc, directory, photosName);
-	
 	/* Workout Tracker */
 	
 	var title = "Workout Tracker";
-	var shortdesc = "A simple Workout Tracker made with Spring Boot.";
-	var longdesc = "<p></p>" +
-					"<p><label><b>Tech Summary:</b></label>" +
+	var shortdesc = "Workout Tracker made with Spring Boot.";
+	var longdesc = "<p>Another hobby project, this time to create a workout tracker where the users can log their workouts and also add new custom exercises. </p>" +
+					"<p>Uses REST API design to handle the client's (GET, POST, PUT, DELETE) requests which could also provide a backend for a mobile app. </p>" +
+					"<br><p><label><b>Tech Summary:</b></label>" +
+					"<ul>" +
+					"<li>Language: Java</li>" +
+					"<li>Framework: Spring Boot (with Spring Security)</li>" +
+					"<li>Version control: Git</li>" +
+					"<li>Frontend: HTML, CSS, JavaScript</li>" +
+					"<li>Other: REST API, SQL</li></ul></p>";	
+	var directory = "projects/workouttracker";
+	var photosName = [ "screenshot1.jpg", "screenshot2.jpg" ];
+	
+	addProject(0, title, shortdesc, longdesc, directory, photosName);
+	
+	/* URL Shortener */
+	
+	var title = "URL Shortener";
+	var shortdesc = "URL Shortener made with Spring Boot.";
+	var longdesc = "<p>It was small hobby project to create a simple URL shortener service as I was curious how they work and how to make one. </p>" +
+					"<p>Uses REST API design to handle the client's (GET, POST, DELETE) requests. </p>" +
+					"<br><p><label><b>Tech Summary:</b></label>" +
 					"<ul>" +
 					"<li>Language: Java</li>" +
 					"<li>Framework: Spring Boot</li>" +
-					"<li>Version control: Git</li></ul></p>";	
-	var directory = "projects/workouttracker";
-	var photosName = [ "screenshot1.jpg", "screenshot2.jpg" ];
+					"<li>Version control: Git</li>" +
+					"<li>Frontend: HTML, CSS, JavaScript</li>" +
+					"<li>Other: REST API, SQL</li></ul></p>";
+	var directory = "projects/urlshortener";
+	var photosName = [ "screenshot.jpg" ];
 	
 	addProject(0, title, shortdesc, longdesc, directory, photosName);
 	
@@ -45,7 +51,7 @@ function onStart() {
 					"<p>I was responsible to plan the game's framework, develop half of the code and integrate the Facebook API. " +
 					"Also I was responsible to manage the Developer Account and market our game.</p>" +
 					"<p>The game reached about 500 downloads.</p>" +
-					"<p><label><b>Tech Summary:</b></label>" +
+					"<br><p><label><b>Tech Summary:</b></label>" +
 					"<ul>" +
 					"<li>Language: C# and Java (Android)</li>" +
 					"<li>Game engine: Unity game engine</li>" +
@@ -65,7 +71,7 @@ function onStart() {
 					"<p>I was responsible for the whole development of the game, including " +
 					"planning the game's framework, developing the App, managing the Developer Account and marketing the game.</p>" +
 					"<p>The game reached about 1000 downloads.</p>" +
-					"<p><label><b>Tech Summary:</b></label>" +
+					"<br><p><label><b>Tech Summary:</b></label>" +
 					"<ul>" +
 					"<li>Language: C# and Java (Android)</li>" +
 					"<li>Game engine: Unity game engine</li>" +
@@ -85,7 +91,7 @@ function onStart() {
 					"<p>I was responsible to plan out the game's framework and to develop half of the game's code. " +
 					"Also, as I was in charge to manage our Play Store's Developer Account I had to build a separate package (free and paid) from the game and upload them.</p>" +
 					"<p>We have reached about 500 downloads.</p>" +
-					"<p><label><b>Tech Summary:</b></label>" +
+					"<br><p><label><b>Tech Summary:</b></label>" +
 					"<ul>" +
 					"<li>Language: Java (Android)</li>" +
 					"<li>Game engine: Written from scratch</li>" +
@@ -115,7 +121,7 @@ function addProject(groupId, title, shortdesc, longdesc, directory, photosName) 
 	
 	toAdd += "<div class='project'>" +
 		"<div class='project-title'>" +	"<h3>" + title + "</h3></div>" +
-		"<div class='project-shortdesc'>" + "<p><i>" + shortdesc + "</i></p>" + "</div>" +
+		"<div class='project-shortdesc'>" + "<p><i>" + shortdesc + "</i></p>" + "</div><br>" +
 		"<div class='project-longdesc'>" + longdesc + "</div><br>";		
 		
 	if (photosName != null) {
