@@ -14,6 +14,7 @@ function onStart() {
 					"<p>Uses REST API design to handle the clients' (GET, POST, PUT, DELETE) requests. This could also easily provide a backend for a mobile app. </p>" +
 					"<p>On GitHub: <a href='https://github.com/mepox/simple-workouttracker'>https://github.com/mepox/simple-workouttracker</a></p>" +
 					"<p>The app is hosted on Heroku: <a href='https://spring-workouttracker.herokuapp.com'>https://spring-workouttracker.herokuapp.com</a></p>" +
+					"<p><i>username: user<br>password: user</i></p>" +
 					"<p><label><b>Tech Summary:</b></label>" +
 					"<ul>" +
 					"<li>Language: Java</li>" +
