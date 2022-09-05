@@ -22,6 +22,11 @@ p {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+a:link {
+	color: #345beb;
+	text-decoration: none;
+}
+
 .main-title {
 	color: white;	
 	font-family: Arial, Helvetica, sans-serif;
