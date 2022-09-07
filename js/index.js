@@ -9,8 +9,12 @@ function onStart() {
 	/* Workout Tracker */
 	
 	var title = "Workout Tracker";
-	var shortdesc = "Workout Tracker made with Spring Boot.";
-	var longdesc = "<p>A simple workout tracker where users are able to log their workouts and also create their own exercises. </p>" +
+	var shortdesc = "Workout Tracker app made with Spring Boot.";
+	var longdesc = "<p>A workout tracker app where users are able to log their workouts and also create their own exercises. </p>" +
+					"<p>" +
+					"- Users can register and login to the application.<br>" +
+					"- Users can create their custom exercises.<br>" +
+					"- Users can log their workout by adding their custom exercises to a specific date.</p>" +
 					"<p>Uses REST API design to handle the clients' (GET, POST, PUT, DELETE) requests. This could also easily provide a backend for a mobile app. </p>" +
 					"<p>On GitHub: <a href='https://github.com/mepox/simple-workouttracker'>Link</a></p>" +
 					"<p>The app is hosted on Heroku: <a href='https://spring-workouttracker.herokuapp.com'>Link</a></p>" +
@@ -31,7 +35,7 @@ function onStart() {
 	
 	var title = "URL Shortener";
 	var shortdesc = "URL Shortener made with Spring Boot.";
-	var longdesc = "<p>It was a small project to create a simple URL shortener service as I was curious how they work and how to make one. </p>" +
+	var longdesc = "<p>It was a small project to create an URL shortener service as I was curious how they work and how to make one. </p>" +
 					"<p>Uses REST API design to handle the clients' (GET, POST, DELETE) requests. </p>" +
 					"<p>On GitHub: <a href='https://github.com/mepox/simple-urlshortener'>Link</a></p>" +
 					"<p>The app is hosted on Heroku: <a href='https://spring-urlshortener.herokuapp.com'>Link</a></p>" +
