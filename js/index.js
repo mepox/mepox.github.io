@@ -64,7 +64,9 @@ function onStart() {
 					"<ul>" +
 					"<li>Language: C# and Java (Android)</li>" +
 					"<li>Game engine: Unity game engine</li>" +
-					"<li>Version control: Git</li></ul></p>";
+					"<li>Version control: Git</li></ul></p>" +
+					"<a href='https://play.google.com/store/apps/details?id=com.pixelbits.thegameofmoves'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' class='googleplaylogo'/></a>" +
+					"<p><i>(Please note: may not available on Google Play if it's under Review or got temporary removed by Google)</i></p>";
 	var directory ="projects/gameofmoves";
 	var photosName = [ "photo_1.png", "photo_2.png", "photo_3.png", "photo_4.png", "photo_5.png", "photo_6.png", "photo_7.png" ];
 	
@@ -84,7 +86,9 @@ function onStart() {
 					"<ul>" +
 					"<li>Language: C# and Java (Android)</li>" +
 					"<li>Game engine: Unity game engine</li>" +
-					"<li>Version control: Git</li></ul></p>";
+					"<li>Version control: Git</li></ul></p>" +
+					"<a href='https://play.google.com/store/apps/details?id=com.laszlojanku.bouncyball'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' class='googleplaylogo'/></a>" +
+					"<p><i>(Please note: may not available on Google Play if it's under Review or got temporary removed by Google)</i></p>";
 	var directory ="projects/bouncyball";
 	var photosName = [ "photo_1.png", "photo_2.png", "photo_3.png", "photo_4.png", "photo_5.png", "photo_6.png" ];
 	
@@ -103,7 +107,9 @@ function onStart() {
 					"<ul>" +
 					"<li>Language: Java (Android)</li>" +
 					"<li>Game engine: Written from scratch</li>" +
-					"<li>Version control: SVN</li></ul></p>";
+					"<li>Version control: SVN</li></ul></p>" +
+					"<a href='https://play.google.com/store/apps/details?id=com.tupix.brickmaniacfree'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' class='googleplaylogo'/></a>" +
+					"<p><i>(Please note: may not available on Google Play if it's under Review or got temporary removed by Google)</i></p>";
 	var directory ="projects/brickmaniac";
 	var photosName = [ "photo_1.jpg", "photo_2.jpg", "photo_3.png"];
 	
