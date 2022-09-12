@@ -19,6 +19,7 @@ function onStart() {
 					"<p>On GitHub: <a href='https://github.com/mepox/simple-workouttracker'>Link</a></p>" +
 					"<p>The app is hosted on Heroku: <a href='https://spring-workouttracker.herokuapp.com'>Link</a></p>" +
 					"<p><i>username: user<br>password: user</i></p>" +
+					"<p><i>(Please note: app may take some time to start on Heroku.)</i></p>" +
 					"<p><label><b>Tech Summary:</b></label>" +
 					"<ul>" +
 					"<li>Language: Java</li>" +
@@ -39,6 +40,7 @@ function onStart() {
 					"<p>Uses REST API design to handle the clients' (GET, POST, DELETE) requests. </p>" +
 					"<p>On GitHub: <a href='https://github.com/mepox/simple-urlshortener'>Link</a></p>" +
 					"<p>The app is hosted on Heroku: <a href='https://spring-urlshortener.herokuapp.com'>Link</a></p>" +
+					"<p><i>(Please note: app may take some time to start on Heroku.)</i></p>" +
 					"<p><label><b>Tech Summary:</b></label>" +
 					"<ul>" +
 					"<li>Language: Java</li>" +
