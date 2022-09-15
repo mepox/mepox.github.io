@@ -38,14 +38,15 @@ a:link, a:visited {
 	color: #CCD6F6;
 }
 
-.project {	
+.project {
+	padding-top: 20px;
+	padding-bottom: 20px;
 	/*background-color: #262626;*/
-	background-color: #172A45;	
-	border: 2px solid gray;
-	border-radius: 10px;
+	background-color: #172A45;
 }
 
-.project-title {
+.project-title h3 {
+	margin-top: 0;
 	font-size: 150%;
 	/*color: white;*/
 	color: #64FFDA;
