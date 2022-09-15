@@ -20,7 +20,16 @@ function onStart() {
 					"<p><a href='https://spring-workouttracker.herokuapp.com'>Live Demo</a>" +
 					"<i> (Please note: app may take some time to start on Heroku.)</i></p>" +
 					"<p><i>username: user<br>password: user</i></p>" + 
-					"<p class='tech'><b>Java - Spring Boot - Spring Security - JavaScript - HTML - CSS - REST API - SQL - Git</b></p>";
+					"<ul class='tech-stack-list'>" +
+					"<li>Java</li>" +
+					"<li>Spring Boot</li>" +
+					"<li>Spring Security</li>" +
+					"<li>JavaScript</li>" +
+					"<li>HTML</li>" +
+					"<li>CSS</li>" +
+					"<li>REST API</li>" +
+					"<li>SQL</li>" +
+					"<li>Git</li></ul>";					
 	var directory = "projects/workouttracker";
 	var photosName = [ "photo_1.png", "photo_2.png" ];
 	
@@ -35,7 +44,16 @@ function onStart() {
 					"<p><a href='https://github.com/mepox/simple-urlshortener'>View Source Code</a></p>" +
 					"<p><a href='https://spring-urlshortener.herokuapp.com'>Live Demo</a>" +
 					"<i> (Please note: app may take some time to start on Heroku.)</i></p>" +
-					"<p class='tech'><b>Java - Spring Boot - JavaScript - HTML - CSS - REST API - SQL - Git";
+					"<ul class='tech-stack-list'>" +
+					"<li>Java</li>" +
+					"<li>Spring Boot</li>" +
+					"<li>Spring Security</li>" +
+					"<li>JavaScript</li>" +
+					"<li>HTML</li>" +
+					"<li>CSS</li>" +
+					"<li>REST API</li>" +
+					"<li>SQL</li>" +
+					"<li>Git</li></ul>";
 	var directory = "projects/urlshortener";
 	var photosName = [ "photo_1.png" ];
 	
@@ -43,8 +61,8 @@ function onStart() {
 	
 	/* Game Of Moves */
 	
-	var title = "Game Of Moves (2019)";
-	var shortdesc = "Android game developed in a team of two.";
+	var title = "Game Of Moves";
+	var shortdesc = "Commercial Android game developed in a team of two.";
 	var longdesc = "<p>The goal was to make a game which is challenging but also slow paced which is much more suited for a mobile game. </p>" +
 					"<p><b>Game Of Moves</b> is a puzzle game where the players has to move all the boxes to the destination zones however each boxes has limited moves. </p>" +
 					"<p>I was responsible for planning the game's framework, developing half of the code and integrating the Facebook API so the users are able share their progress on Social Media. " +
@@ -52,7 +70,12 @@ function onStart() {
 					"<p>The game reached about 500 downloads.</p>" +
 					"<p><a href='https://play.google.com/store/apps/details?id=com.pixelbits.thegameofmoves'><img alt='Get it on Google Play' src='logos/googleplay.png' class='googleplaylogo'/></a></p>" +
 					"<p><i>(Please note: may not available on Google Play if it's under Review)</i></p>" +
-					"<p class='tech'><b>Java - C# - Android - Unity game engine - Git</b></p>";
+					"<ul class='tech-stack-list'>" +
+					"<li>Java</li>" +
+					"<li>C#</li>" +
+					"<li>Android</li>" +
+					"<li>Unity</li>" +					
+					"<li>Git</li></ul>";					
 	var directory ="projects/gameofmoves";
 	var photosName = [ "photo_1.png", "photo_2.png", "photo_3.png", "photo_4.png", "photo_5.png", "photo_6.png", "photo_7.png" ];
 	
@@ -60,8 +83,8 @@ function onStart() {
 	
 	/* Bouncy Ball */
 	
-	var title = "Bouncy Ball (2016)";
-	var shortdesc = "Android game developed by myself.";
+	var title = "Bouncy Ball";
+	var shortdesc = "Commercial Android game developed by myself.";
 	var longdesc = "<p>The goal was to make an addicting game where the users are keep coming back to try to beat their previous highscores. </p>" +
 					"<p><b>Bouncy Ball</b> is an action game, where the players has to jump higher and higher by tapping the screen and avoid the dangerous spikes. </p>" +					
 					"<p>I was responsible for the whole development of the game, including " +
@@ -70,7 +93,12 @@ function onStart() {
 					"<p>The game reached about 1000 downloads.</p>" +
 					"<p><a href='https://play.google.com/store/apps/details?id=com.laszlojanku.bouncyball'><img alt='Get it on Google Play' src='logos/googleplay.png' class='googleplaylogo'/></a></p>" +
 					"<p><i>(Please note: may not available on Google Play if it's under Review)</i></p>" +
-					"<p class='tech'><b>Java - C# - Android - Unity game engine - Git</b></p>";
+					"<ul class='tech-stack-list'>" +
+					"<li>Java</li>" +
+					"<li>C#</li>" +
+					"<li>Android</li>" +
+					"<li>Unity</li>" +					
+					"<li>Git</li></ul>";					
 	var directory ="projects/bouncyball";
 	var photosName = [ "photo_1.png", "photo_2.png", "photo_3.png", "photo_4.png", "photo_5.png", "photo_6.png" ];
 	
@@ -78,16 +106,20 @@ function onStart() {
 	
 	/* Brick Maniac */
 	
-	var title = "Brick Maniac (2014)";
-	var shortdesc = "Android game developed in a team of two.";
+	var title = "Brick Maniac";
+	var shortdesc = "Commercial Android game developed in a team of two.";
 	var longdesc =  "<p>The goal was to make a classic brick breaker game which is much more polished than the rest of the similar games in the Play Store. </p>" +				 
 					"<p><b>Brick Maniac</b> is a classic brick breaker game, where the users has to destroy all the bricks with the ball to complete the levels. </p>" +
 					"<p>I was responsible for planning the game's framework and developing half of the game's code. " +
 					"Also, I was responsible for managing the Play Store's Developer Account (building and uploading the app). </p>" +
-					"<p>We have reached about 500 downloads.</p>" +
+					"<p>The game reached about 500 downloads.</p>" +
 					"<p><a href='https://play.google.com/store/apps/details?id=com.tupix.brickmaniacfree'><img alt='Get it on Google Play' src='logos/googleplay.png' class='googleplaylogo'/></a></p>" +
 					"<p><i>(Please note: may not available on Google Play if it's under Review)</i></p>" +
-					"<p class='tech'><b>Java - Android - Game engine from scratch - SVN</b></p>";
+					"<ul class='tech-stack-list'>" +
+					"<li>Java</li>" +					
+					"<li>Android</li>" +
+					"<li>Game engine from scratch</li>" +					
+					"<li>Git</li></ul>";
 	var directory ="projects/brickmaniac";
 	var photosName = [ "photo_1.png", "photo_2.png", "photo_3.png"];
 	
