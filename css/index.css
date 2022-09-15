@@ -5,7 +5,10 @@ body {
 }
 
 hr {
+	border: none;
+	height: 1px;
 	width: 25%;
+	background-color: #CCD6F6;
 }
 
 
@@ -47,24 +50,26 @@ a:link, a:visited {
 
 .project-title h3 {
 	margin-top: 0;
+	margin-bottom: 0;
 	font-size: 150%;
 	/*color: white;*/
 	color: #64FFDA;
 }
 
-.project-shortdesc {	
-	width: 95%;
+.project-shortdesc {		
 	margin-left: auto;
 	margin-right: auto;
+	width: 95%;
 	/*color: white;*/
 	color: #A8B2D1;	
 }
 
-.project-longdesc {
-	width: 95%;
+.project-longdesc {	
 	text-align: left;
+	margin-top: 30px;
 	margin-left: auto;
 	margin-right: auto;
+	width: 95%;
 	color: #A8B2D1;
 }
 
@@ -100,6 +105,7 @@ a:link, a:visited {
 }
 
 .googleplaylogo {
+	display: block;
 	max-width: 160px;
 	max-height: 80px;
 }

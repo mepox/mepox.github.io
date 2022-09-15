@@ -68,8 +68,8 @@ function onStart() {
 					"<p>I was responsible for planning the game's framework, developing half of the code and integrating the Facebook API so the users are able share their progress on Social Media. " +
 					"Also I was responsible for managing the Play Store's Developer Account (building and uploading the app) and marketing our game. </p>" +
 					"<p>The game reached about 500 downloads.</p>" +
-					"<p><a href='https://play.google.com/store/apps/details?id=com.pixelbits.thegameofmoves'><img alt='Get it on Google Play' src='logos/googleplay.png' class='googleplaylogo'/></a></p>" +
-					"<p><i>(Please note: may not available on Google Play if it's under Review)</i></p>" +
+					"<p><a href='https://play.google.com/store/apps/details?id=com.pixelbits.thegameofmoves'><img alt='Get it on Google Play' src='logos/googleplay.png' class='googleplaylogo'/></a>" +
+					"<i>(Please note: may not available on Google Play if it's under Review)</i></p>" +
 					"<ul class='tech-stack-list'>" +
 					"<li>Java</li>" +
 					"<li>C#</li>" +
@@ -91,8 +91,8 @@ function onStart() {
 					"planning the game's framework, coding the core gameplay and integrating the Facebook API so the users are able to share their highscores on Social Media. " +
 					"Also, managing the Play Store's Developer Account (building and uploading the app) and marketing the game.</p>" +
 					"<p>The game reached about 1000 downloads.</p>" +
-					"<p><a href='https://play.google.com/store/apps/details?id=com.laszlojanku.bouncyball'><img alt='Get it on Google Play' src='logos/googleplay.png' class='googleplaylogo'/></a></p>" +
-					"<p><i>(Please note: may not available on Google Play if it's under Review)</i></p>" +
+					"<p><a href='https://play.google.com/store/apps/details?id=com.laszlojanku.bouncyball'><img alt='Get it on Google Play' src='logos/googleplay.png' class='googleplaylogo'/></a>" +
+					"<i>(Please note: may not available on Google Play if it's under Review)</i></p>" +
 					"<ul class='tech-stack-list'>" +
 					"<li>Java</li>" +
 					"<li>C#</li>" +
@@ -113,8 +113,8 @@ function onStart() {
 					"<p>I was responsible for planning the game's framework and developing half of the game's code. " +
 					"Also, I was responsible for managing the Play Store's Developer Account (building and uploading the app). </p>" +
 					"<p>The game reached about 500 downloads.</p>" +
-					"<p><a href='https://play.google.com/store/apps/details?id=com.tupix.brickmaniacfree'><img alt='Get it on Google Play' src='logos/googleplay.png' class='googleplaylogo'/></a></p>" +
-					"<p><i>(Please note: may not available on Google Play if it's under Review)</i></p>" +
+					"<p><a href='https://play.google.com/store/apps/details?id=com.tupix.brickmaniacfree'><img alt='Get it on Google Play' src='logos/googleplay.png' class='googleplaylogo'/></a>" +
+					"<i>(Please note: may not available on Google Play if it's under Review)</i></p>" +
 					"<ul class='tech-stack-list'>" +
 					"<li>Java</li>" +					
 					"<li>Android</li>" +									
@@ -144,7 +144,7 @@ function addProject(groupId, title, shortdesc, longdesc, directory, photosName) 
 	
 	toAdd += "<div class='project'>" +
 		"<div class='project-title'>" +	"<h3>" + title + "</h3></div>" +
-		"<div class='project-shortdesc'>" + "<p><i>" + shortdesc + "</i></p>" + "</div><br>" +
+		"<div class='project-shortdesc'>" + "<p><i>" + shortdesc + "</i></p>" + "</div>" +
 		"<div class='project-longdesc'>" + longdesc + "</div><br>";		
 		
 	if (photosName != null) {
