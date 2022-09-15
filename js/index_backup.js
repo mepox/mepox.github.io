@@ -10,17 +10,23 @@ function onStart() {
 	
 	var title = "Workout Tracker";
 	var shortdesc = "Workout Tracker app made with Spring Boot.";
-	var longdesc =	"<p>A workout tracker app where users are able to log their workouts and also create their own exercises. </p>" +
+	var longdesc = "<p>A workout tracker app where users are able to log their workouts and also create their own exercises. </p>" +
 					"<p>" +
 					"- Users can register and login to the application.<br>" +
 					"- Users can create their custom exercises.<br>" +
 					"- Users can log their workout by adding their custom exercises to a specific date.</p>" +
 					"<p>Uses REST API design to handle the clients' (GET, POST, PUT, DELETE) requests. This could also easily provide a backend for a mobile app. </p>" +
-					"<p><a href='https://github.com/mepox/simple-workouttracker'>View Source Code</a></p>" +
-					"<p><a href='https://spring-workouttracker.herokuapp.com'>Live Demo</a>" +
-					"<i> (Please note: app may take some time to start on Heroku.)</i></p>" +
-					"<p><i>username: user<br>password: user</i></p>" + 
-					"<p class='tech'><b>Java - Spring Boot - Spring Security - JavaScript - HTML - CSS - REST API - SQL - Git</b></p>";
+					"<p>On GitHub: <a href='https://github.com/mepox/simple-workouttracker'>Link</a></p>" +
+					"<p>The app is hosted on Heroku: <a href='https://spring-workouttracker.herokuapp.com'>Link</a></p>" +
+					"<p><i>username: user<br>password: user</i></p>" +
+					"<p><i>(Please note: app may take some time to start on Heroku.)</i></p>" +
+					"<p><label><b>Tech Summary:</b></label>" +
+					"<ul>" +
+					"<li>Language: Java</li>" +
+					"<li>Framework: Spring Boot (with Spring Security)</li>" +
+					"<li>Version control: Git</li>" +
+					"<li>Frontend: HTML, CSS, JavaScript</li>" +
+					"<li>Other: REST API, SQL</li></ul></p>";	
 	var directory = "projects/workouttracker";
 	var photosName = [ "screenshot1.jpg", "screenshot2.jpg" ];
 	
@@ -32,10 +38,16 @@ function onStart() {
 	var shortdesc = "URL Shortener made with Spring Boot.";
 	var longdesc = "<p>It was a small project to create an URL shortener service as I was curious how they work and how to make one. </p>" +
 					"<p>Uses REST API design to handle the clients' (GET, POST, DELETE) requests. </p>" +
-					"<p><a href='https://github.com/mepox/simple-urlshortener'>View Source Code</a></p>" +
-					"<p><a href='https://spring-urlshortener.herokuapp.com'>Live Demo</a>" +
-					"<i> (Please note: app may take some time to start on Heroku.)</i></p>" +
-					"<p class='tech'><b>Java - Spring Boot - JavaScript - HTML - CSS - REST API - SQL - Git";
+					"<p>On GitHub: <a href='https://github.com/mepox/simple-urlshortener'>Link</a></p>" +
+					"<p>The app is hosted on Heroku: <a href='https://spring-urlshortener.herokuapp.com'>Link</a></p>" +
+					"<p><i>(Please note: app may take some time to start on Heroku.)</i></p>" +
+					"<p><label><b>Tech Summary:</b></label>" +
+					"<ul>" +
+					"<li>Language: Java</li>" +
+					"<li>Framework: Spring Boot</li>" +
+					"<li>Version control: Git</li>" +
+					"<li>Frontend: HTML, CSS, JavaScript</li>" +
+					"<li>Other: REST API, SQL</li></ul></p>";
 	var directory = "projects/urlshortener";
 	var photosName = [ "screenshot.jpg" ];
 	
@@ -50,9 +62,13 @@ function onStart() {
 					"<p>I was responsible for planning the game's framework, developing half of the code and integrating the Facebook API so the users are able share their progress on Social Media. " +
 					"Also I was responsible for managing the Play Store's Developer Account (building and uploading the app) and marketing our game. </p>" +
 					"<p>The game reached about 500 downloads.</p>" +
-					"<p><a href='https://play.google.com/store/apps/details?id=com.pixelbits.thegameofmoves'><img alt='Get it on Google Play' src='logos/googleplay.png' class='googleplaylogo'/></a></p>" +
-					"<p><i>(Please note: may not available on Google Play if it's under Review)</i></p>" +
-					"<p class='tech'><b>Java - C# - Android - Unity game engine - Git</b></p>";
+					"<p><label><b>Tech Summary:</b></label>" +
+					"<ul>" +
+					"<li>Language: C# and Java (Android)</li>" +
+					"<li>Game engine: Unity game engine</li>" +
+					"<li>Version control: Git</li></ul></p>" +
+					"<a href='https://play.google.com/store/apps/details?id=com.pixelbits.thegameofmoves'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' class='googleplaylogo'/></a>" +
+					"<p><i>(Please note: may not available on Google Play if it's under Review or got temporary removed by Google)</i></p>";
 	var directory ="projects/gameofmoves";
 	var photosName = [ "photo_1.png", "photo_2.png", "photo_3.png", "photo_4.png", "photo_5.png", "photo_6.png", "photo_7.png" ];
 	
@@ -68,9 +84,13 @@ function onStart() {
 					"planning the game's framework, coding the core gameplay and integrating the Facebook API so the users are able to share their highscores on Social Media. " +
 					"Also, managing the Play Store's Developer Account (building and uploading the app) and marketing the game.</p>" +
 					"<p>The game reached about 1000 downloads.</p>" +
-					"<p><a href='https://play.google.com/store/apps/details?id=com.laszlojanku.bouncyball'><img alt='Get it on Google Play' src='logos/googleplay.png' class='googleplaylogo'/></a></p>" +
-					"<p><i>(Please note: may not available on Google Play if it's under Review or got temporary removed by Google)</i></p>" +
-					"<p class='tech'><b>Java - C# - Android - Unity game engine - Git</b></p>";
+					"<p><label><b>Tech Summary:</b></label>" +
+					"<ul>" +
+					"<li>Language: C# and Java (Android)</li>" +
+					"<li>Game engine: Unity game engine</li>" +
+					"<li>Version control: Git</li></ul></p>" +
+					"<a href='https://play.google.com/store/apps/details?id=com.laszlojanku.bouncyball'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' class='googleplaylogo'/></a>" +
+					"<p><i>(Please note: may not available on Google Play if it's under Review or got temporary removed by Google)</i></p>";
 	var directory ="projects/bouncyball";
 	var photosName = [ "photo_1.png", "photo_2.png", "photo_3.png", "photo_4.png", "photo_5.png", "photo_6.png" ];
 	
@@ -85,9 +105,13 @@ function onStart() {
 					"<p>I was responsible for planning the game's framework and developing half of the game's code. " +
 					"Also, I was responsible for managing the Play Store's Developer Account (building and uploading the app). </p>" +
 					"<p>We have reached about 500 downloads.</p>" +
-					"<p><a href='https://play.google.com/store/apps/details?id=com.tupix.brickmaniacfree'><img alt='Get it on Google Play' src='logos/googleplay.png' class='googleplaylogo'/></a></p>" +
-					"<p><i>(Please note: may not available on Google Play if it's under Review or got temporary removed by Google)</i></p>" +
-					"<p class='tech'><b>Java - Android - Game engine from scratch - SVN</b></p>";
+					"<p><label><b>Tech Summary:</b></label>" +
+					"<ul>" +
+					"<li>Language: Java (Android)</li>" +
+					"<li>Game engine: Written from scratch</li>" +
+					"<li>Version control: SVN</li></ul></p>" +
+					"<a href='https://play.google.com/store/apps/details?id=com.tupix.brickmaniacfree'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' class='googleplaylogo'/></a>" +
+					"<p><i>(Please note: may not available on Google Play if it's under Review or got temporary removed by Google)</i></p>";
 	var directory ="projects/brickmaniac";
 	var photosName = [ "photo_1.jpg", "photo_2.jpg", "photo_3.png"];
 	
