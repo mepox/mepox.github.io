@@ -22,7 +22,7 @@ function onStart() {
 					"<p><i>username: user<br>password: user</i></p>" + 
 					"<p class='tech'><b>Java - Spring Boot - Spring Security - JavaScript - HTML - CSS - REST API - SQL - Git</b></p>";
 	var directory = "projects/workouttracker";
-	var photosName = [ "screenshot1.jpg", "screenshot2.jpg" ];
+	var photosName = [ "photo_1.png", "photo_2.png" ];
 	
 	addProject(0, title, shortdesc, longdesc, directory, photosName);
 	
@@ -37,7 +37,7 @@ function onStart() {
 					"<i> (Please note: app may take some time to start on Heroku.)</i></p>" +
 					"<p class='tech'><b>Java - Spring Boot - JavaScript - HTML - CSS - REST API - SQL - Git";
 	var directory = "projects/urlshortener";
-	var photosName = [ "screenshot.jpg" ];
+	var photosName = [ "photo_1.png" ];
 	
 	addProject(0, title, shortdesc, longdesc, directory, photosName);
 	
@@ -69,7 +69,7 @@ function onStart() {
 					"Also, managing the Play Store's Developer Account (building and uploading the app) and marketing the game.</p>" +
 					"<p>The game reached about 1000 downloads.</p>" +
 					"<p><a href='https://play.google.com/store/apps/details?id=com.laszlojanku.bouncyball'><img alt='Get it on Google Play' src='logos/googleplay.png' class='googleplaylogo'/></a></p>" +
-					"<p><i>(Please note: may not available on Google Play if it's under Review or got temporary removed by Google)</i></p>" +
+					"<p><i>(Please note: may not available on Google Play if it's under Review)</i></p>" +
 					"<p class='tech'><b>Java - C# - Android - Unity game engine - Git</b></p>";
 	var directory ="projects/bouncyball";
 	var photosName = [ "photo_1.png", "photo_2.png", "photo_3.png", "photo_4.png", "photo_5.png", "photo_6.png" ];
@@ -86,10 +86,10 @@ function onStart() {
 					"Also, I was responsible for managing the Play Store's Developer Account (building and uploading the app). </p>" +
 					"<p>We have reached about 500 downloads.</p>" +
 					"<p><a href='https://play.google.com/store/apps/details?id=com.tupix.brickmaniacfree'><img alt='Get it on Google Play' src='logos/googleplay.png' class='googleplaylogo'/></a></p>" +
-					"<p><i>(Please note: may not available on Google Play if it's under Review or got temporary removed by Google)</i></p>" +
+					"<p><i>(Please note: may not available on Google Play if it's under Review)</i></p>" +
 					"<p class='tech'><b>Java - Android - Game engine from scratch - SVN</b></p>";
 	var directory ="projects/brickmaniac";
-	var photosName = [ "photo_1.jpg", "photo_2.jpg", "photo_3.png"];
+	var photosName = [ "photo_1.png", "photo_2.png", "photo_3.png"];
 	
 	addProject(1, title, shortdesc, longdesc, directory, photosName);
 }
