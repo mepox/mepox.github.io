@@ -117,8 +117,7 @@ function onStart() {
 					"<p><i>(Please note: may not available on Google Play if it's under Review)</i></p>" +
 					"<ul class='tech-stack-list'>" +
 					"<li>Java</li>" +					
-					"<li>Android</li>" +
-					"<li>Game engine from scratch</li>" +					
+					"<li>Android</li>" +									
 					"<li>Git</li></ul>";
 	var directory ="projects/brickmaniac";
 	var photosName = [ "photo_1.png", "photo_2.png", "photo_3.png"];
