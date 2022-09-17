@@ -10,54 +10,51 @@ function onStart() {
 	
 	var title = "Workout Tracker";
 	var shortdesc = "Workout Tracker app made with Spring Boot.";
-	var longdesc =	"<p>A workout tracker app where users are able to log their workouts and also create their own exercises. </p>" +
-					"<p>" +
-					"- Users can register and login to the application.<br>" +
-					"- Users can create their custom exercises.<br>" +
-					"- Users can log their workout by adding their custom exercises to a specific date.</p>" +
-					"<p>Uses REST API design to handle the clients' (GET, POST, PUT, DELETE) requests. This could also easily provide a backend for a mobile app. </p>" +
-					"<p><a href='https://github.com/mepox/simple-workouttracker'>View Source Code</a></p>" +
-					"<p><a href='https://spring-workouttracker.herokuapp.com'>Live Demo</a>" +
+	var longdesc =	"<ul class='longdesc-list'>" +
+					"<li>Users are able to log their workouts and create their own exercises</li>" +
+					"<ul class='longdesc-sublist'>" +
+					"<li>Register and login to the application</li>" +
+					"<li>Create custom exercises</li>" +
+					"<li>Log workout by adding custom exercises to a specific date</li>" +
+					"</ul>" +
+					"<li>REST API design to handle the clients' (GET, POST, PUT, DELETE) requests</li>" +
+					"<li>Spring Boot Security manages the users authentication</li>" +
+					"<li>H2 in-memory database to store the data</li>" +
+					"</ul>" +
+
+					"<p><a href='https://github.com/mepox/simple-workouttracker' target='_blank'>View Source Code</a></p>" +
+					"<p><a href='https://spring-workouttracker.herokuapp.com' target='_blank'>Live Demo</a>" +
 					"<i> (Please note: app may take some time to start on Heroku.)</i></p>" +
-					"<p><i>username: user<br>password: user</i></p>" + 
-					"<ul class='tech-stack-list'>" +
-					"<li>Java</li>" +
-					"<li>Spring Boot</li>" +
-					"<li>Spring Security</li>" +
-					"<li>JavaScript</li>" +
-					"<li>HTML</li>" +
-					"<li>CSS</li>" +
-					"<li>REST API</li>" +
-					"<li>SQL</li>" +
-					"<li>Git</li></ul>";					
+					"<p><i>username: user<br>password: user</i></p>";
+					
 	var directory = "projects/workouttracker";
 	var photosName = [ "photo_1.png", "photo_2.png" ];
+	var photoClass = "project-photo-big";
+	var techStack = [ "Java", "Spring Boot", "Spring Security", "JavaScript", "HTML", "CSS", "REST API", "SQL", "Git" ];	
 	
-	addProject(0, title, shortdesc, longdesc, directory, photosName);
+	addProject(0, title, shortdesc, longdesc, directory, photosName, photoClass, techStack);
 	
 	/* URL Shortener */
 	
 	var title = "URL Shortener";
 	var shortdesc = "URL Shortener made with Spring Boot.";
-	var longdesc = "<p>It was a small project to create an URL shortener service as I was curious how they work and how to make one. </p>" +
-					"<p>Uses REST API design to handle the clients' (GET, POST, DELETE) requests. </p>" +
-					"<p><a href='https://github.com/mepox/simple-urlshortener'>View Source Code</a></p>" +
-					"<p><a href='https://spring-urlshortener.herokuapp.com'>Live Demo</a>" +
-					"<i> (Please note: app may take some time to start on Heroku.)</i></p>" +
-					"<ul class='tech-stack-list'>" +
-					"<li>Java</li>" +
-					"<li>Spring Boot</li>" +
-					"<li>Spring Security</li>" +
-					"<li>JavaScript</li>" +
-					"<li>HTML</li>" +
-					"<li>CSS</li>" +
-					"<li>REST API</li>" +
-					"<li>SQL</li>" +
-					"<li>Git</li></ul>";
+	var longdesc = 	"<ul class='longdesc-list'>" +
+					"<li>Shortens the users' URL</li>" +
+					"<li>Generates an unique key for each URL</li>" +
+					"<li>REST API design to handle the clients' (GET, POST, DELETE) requests</li>" +
+					"<li>H2 in-memory database to store the data</li>" +
+					"</ul>" +				
+					
+					"<p><a href='https://github.com/mepox/simple-urlshortener' target='_blank'>View Source Code</a></p>" +
+					"<p><a href='https://spring-urlshortener.herokuapp.com' target='_blank'>Live Demo</a>" +
+					"<i> (Please note: app may take some time to start on Heroku.)</i></p>";
+					
 	var directory = "projects/urlshortener";
 	var photosName = [ "photo_1.png" ];
+	var photoClass = "project-photo-big";
+	var techStack = [ "Java", "Spring Boot", "JavaScript", "HTML", "CSS", "REST API", "SQL", "Git" ];
 	
-	addProject(0, title, shortdesc, longdesc, directory, photosName);
+	addProject(0, title, shortdesc, longdesc, directory, photosName, photoClass, techStack);
 	
 	/* Game Of Moves */
 	
@@ -65,44 +62,47 @@ function onStart() {
 	var shortdesc = "Commercial Android game developed in a team of two.";
 	var longdesc = "<p>The goal was to make a game which is challenging but also slow paced which is much more suited for a mobile game. </p>" +
 					"<p><b>Game Of Moves</b> is a puzzle game where the players has to move all the boxes to the destination zones however each boxes has limited moves. </p>" +
-					"<p>I was responsible for planning the game's framework, developing half of the code and integrating the Facebook API so the users are able share their progress on Social Media. " +
-					"Also I was responsible for managing the Play Store's Developer Account (building and uploading the app) and marketing our game. </p>" +
+					
+					"<ul class='longdesc-list'>" +
+					"<li>Developed the game's framework and half of the code</li>" +
+					"<li>Integrated Facebook API so the users are able to share their progress on Social Media</li>" +
+					"<li>Managed the Google Play's Developer Console</li>" +
+					"</ul>" +
+					
 					"<p>The game reached about 500 downloads.</p>" +
-					"<p><a href='https://play.google.com/store/apps/details?id=com.pixelbits.thegameofmoves'><img alt='Get it on Google Play' src='logos/googleplay.png' class='googleplaylogo'/></a>" +
-					"<i>(Please note: may not available on Google Play if it's under Review)</i></p>" +
-					"<ul class='tech-stack-list'>" +
-					"<li>Java</li>" +
-					"<li>C#</li>" +
-					"<li>Android</li>" +
-					"<li>Unity</li>" +					
-					"<li>Git</li></ul>";					
+					"<p><a href='https://play.google.com/store/apps/details?id=com.pixelbits.thegameofmoves' target='_blank'><img alt='Get it on Google Play' src='logos/googleplay.png' class='googleplaylogo'/></a>" +
+					"<i>(Please note: may not available on Google Play if it's under Review)</i></p>";
+										
 	var directory ="projects/gameofmoves";
 	var photosName = [ "photo_1.png", "photo_2.png", "photo_3.png", "photo_4.png", "photo_5.png", "photo_6.png", "photo_7.png" ];
+	var photoClass = "project-photo";
+	var techStack = [ "Java", "C#", "Android", "Unity", "Git" ];
 	
-	addProject(1, title, shortdesc, longdesc, directory, photosName);
+	addProject(1, title, shortdesc, longdesc, directory, photosName, photoClass, techStack);
 	
 	/* Bouncy Ball */
 	
 	var title = "Bouncy Ball";
 	var shortdesc = "Commercial Android game developed by myself.";
 	var longdesc = "<p>The goal was to make an addicting game where the users are keep coming back to try to beat their previous highscores. </p>" +
-					"<p><b>Bouncy Ball</b> is an action game, where the players has to jump higher and higher by tapping the screen and avoid the dangerous spikes. </p>" +					
-					"<p>I was responsible for the whole development of the game, including " +
-					"planning the game's framework, coding the core gameplay and integrating the Facebook API so the users are able to share their highscores on Social Media. " +
-					"Also, managing the Play Store's Developer Account (building and uploading the app) and marketing the game.</p>" +
+					"<p><b>Bouncy Ball</b> is an action game, where the players has to jump higher and higher by tapping the screen and avoid the dangerous spikes. </p>" +
+										
+					"<ul class='longdesc-list'>" +					
+					"<li>Developed the game's framework and the core gameplay</li>" +
+					"<li>Integrated Facebook API so the users are able to share their progress on Social Media</li>" +
+					"<li>Managed the Google Play's Developer Console</li>" +
+					"</ul>" +										
+					
 					"<p>The game reached about 1000 downloads.</p>" +
-					"<p><a href='https://play.google.com/store/apps/details?id=com.laszlojanku.bouncyball'><img alt='Get it on Google Play' src='logos/googleplay.png' class='googleplaylogo'/></a>" +
-					"<i>(Please note: may not available on Google Play if it's under Review)</i></p>" +
-					"<ul class='tech-stack-list'>" +
-					"<li>Java</li>" +
-					"<li>C#</li>" +
-					"<li>Android</li>" +
-					"<li>Unity</li>" +					
-					"<li>Git</li></ul>";					
+					"<p><a href='https://play.google.com/store/apps/details?id=com.laszlojanku.bouncyball' target='_blank'><img alt='Get it on Google Play' src='logos/googleplay.png' class='googleplaylogo'/></a>" +
+					"<i>(Please note: may not available on Google Play if it's under Review)</i></p>";
+					
 	var directory ="projects/bouncyball";
 	var photosName = [ "photo_1.png", "photo_2.png", "photo_3.png", "photo_4.png", "photo_5.png", "photo_6.png" ];
+	var photoClass = "project-photo";
+	var techStack = [ "Java", "C#", "Android", "Unity", "Git" ];
 	
-	addProject(1, title, shortdesc, longdesc, directory, photosName);
+	addProject(1, title, shortdesc, longdesc, directory, photosName, photoClass, techStack);
 	
 	/* Brick Maniac */
 	
@@ -110,19 +110,24 @@ function onStart() {
 	var shortdesc = "Commercial Android game developed in a team of two.";
 	var longdesc =  "<p>The goal was to make a classic brick breaker game which is much more polished than the rest of the similar games in the Play Store. </p>" +				 
 					"<p><b>Brick Maniac</b> is a classic brick breaker game, where the users has to destroy all the bricks with the ball to complete the levels. </p>" +
-					"<p>I was responsible for planning the game's framework and developing half of the game's code. " +
-					"Also, I was responsible for managing the Play Store's Developer Account (building and uploading the app). </p>" +
+					
+					"<ul class='longdesc-list'>" +
+					"<li>Developed the game's framework and half of the code</li>" +
+					"<li>Uses custom game engine</li>" +
+					"<li>Integrated Facebook API so the users are able to share their progress on Social Media</li>" +
+					"<li>Managed the Google Play's Developer Console</li>" +
+					"</ul>" +
+					
 					"<p>The game reached about 500 downloads.</p>" +
-					"<p><a href='https://play.google.com/store/apps/details?id=com.tupix.brickmaniacfree'><img alt='Get it on Google Play' src='logos/googleplay.png' class='googleplaylogo'/></a>" +
-					"<i>(Please note: may not available on Google Play if it's under Review)</i></p>" +
-					"<ul class='tech-stack-list'>" +
-					"<li>Java</li>" +					
-					"<li>Android</li>" +									
-					"<li>Git</li></ul>";
+					"<p><a href='https://play.google.com/store/apps/details?id=com.tupix.brickmaniacfree' target='_blank'><img alt='Get it on Google Play' src='logos/googleplay.png' class='googleplaylogo'/></a>" +
+					"<i>(Please note: may not available on Google Play if it's under Review)</i></p>";
+
 	var directory ="projects/brickmaniac";
 	var photosName = [ "photo_1.png", "photo_2.png", "photo_3.png"];
+	var photoClass = "project-photo";
+	var techStack = [ "Java", "Android", "SVN" ];
 	
-	addProject(1, title, shortdesc, longdesc, directory, photosName);
+	addProject(1, title, shortdesc, longdesc, directory, photosName, photoClass, techStack);
 }
 
 function addTitle(text) {
@@ -138,28 +143,86 @@ function generateProjectGroups(titles) {
 	}
 }
 
-function addProject(groupId, title, shortdesc, longdesc, directory, photosName) {
+function addProject(groupId, title, shortDesc, longDesc, directory, photosName, photoClass, techStack) {
 	var projectGroup = document.getElementsByClassName("project-group")[groupId];
+	
+	// Add project div
+	var toAdd = "<div class='project'></div><br><hr><br>";
+	projectGroup.innerHTML += toAdd;
+	
+	var projects = document.getElementsByClassName("project");
+	var project = projects[projects.length-1];
+	
+	// Add title
+	addProjectTitle(project, title);
+	
+	// Add short description
+	addProjectShortDesc(project, shortDesc);
+	
+	// Add tech stack
+	addProjectTechStack(project, techStack);
+	
+	// Add long description
+	addProjectLongDesc(project, longDesc);
+	
+	// Add photos
+	addProjectPhotos(project, directory, photosName, photoClass);
+}
+
+function addProjectTitle(project, title) {
+	// Add title
+	var toAdd = "<div class='project-title'>" + "<h3>" + title + "</h3></div>";
+	
+	project.innerHTML += toAdd;
+}
+
+function addProjectShortDesc(project, shortDesc) {		
+	// Add short description
+	var toAdd = "<div class='project-shortdesc'>" + "<p><i>" + shortDesc + "</i></p>" + "</div>";
+	
+	project.innerHTML += toAdd;
+}
+
+function addProjectLongDesc(project, longDesc) {
+	// Add long description
+	var toAdd = "<div class='project-longdesc'>" + longDesc + "</div><br>";
+	
+	project.innerHTML += toAdd;
+}
+
+function addProjectTechStack(project, techStack) {
 	var toAdd = "";
 	
-	toAdd += "<div class='project'>" +
-		"<div class='project-title'>" +	"<h3>" + title + "</h3></div>" +
-		"<div class='project-shortdesc'>" + "<p><i>" + shortdesc + "</i></p>" + "</div>" +
-		"<div class='project-longdesc'>" + longdesc + "</div><br>";		
+	// Add tech stack	
+	if (techStack != null) {
+		toAdd += "<div class='project-techstack'>";
+		toAdd += "<ul class='tech-stack-list'>";
 		
+		for (var i = 0; i < techStack.length; i++) {
+			toAdd += "<li>" + techStack[i] + "</li>";
+		}
+		
+		toAdd += "</ul></div>";
+	}
+	
+	project.innerHTML += toAdd;
+}
+
+function addProjectPhotos(project, directory, photosName, photoClass) {
+	var toAdd = "";
+	
+	// Add photos
 	if (photosName != null) {
 		toAdd += "<div class='project-photos'>"; 
 		
 		for (var i = 0; i < photosName.length; i++) {
 			var fullPhotoName = directory + "/" + photosName[i];
-			toAdd += "<a href='" + fullPhotoName + "'>" +
-					"<img src='" + fullPhotoName + "' class='project-photo'></a>";	
+			toAdd += "<a href='" + fullPhotoName + "' target='_blank'>" +
+					"<img src='" + fullPhotoName + "' class='" + photoClass + "'></a>";	
 		}
 		
 		toAdd += "</div>";
 	}
 	
-	toAdd += "</div><br><hr><br>";
-	
-	projectGroup.innerHTML += toAdd;
+	project.innerHTML += toAdd;
 }

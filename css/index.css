@@ -11,15 +11,19 @@ hr {
 	background-color: #CCD6F6;
 }
 
-
 a:link, a:visited {
-	color: skyblue;	
+	font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+	/*color: skyblue;*/
+	/*color: #64FFDA;*/
+	/*color: RoyalBlue;*/
+	/*color: #2972ff;*/
+	color: #71acff;
+	
 }
 
 .main-title {
 	text-align: center;
-	font-size: 200%;
-	/*color: white;*/
+	font-size: 200%;	
 	color: #CCD6F6;
 }
 
@@ -36,31 +40,33 @@ a:link, a:visited {
   }
 }
 
-.project-group-title {
-	/*color: white;*/
-	color: #CCD6F6;
+.project-group-title h2 {
+	font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace;
+	font-weight: normal;
+	font-size: 13px;	
+	color: #64FFDA;
+	/*color: #CCD6F6;*/
 }
 
 .project {
 	padding-top: 20px;
-	padding-bottom: 20px;
-	/*background-color: #262626;*/
+	padding-bottom: 20px;	
 	background-color: #172A45;
 }
 
 .project-title h3 {
 	margin-top: 0;
 	margin-bottom: 0;
-	font-size: 150%;
-	/*color: white;*/
-	color: #64FFDA;
+	/*font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace;*/
+	font-size: 150%;	
+	/*color: #64FFDA;*/	
+	color: #CCD6F6;	
 }
 
 .project-shortdesc {		
 	margin-left: auto;
 	margin-right: auto;
-	width: 95%;
-	/*color: white;*/
+	width: 95%;	
 	color: #A8B2D1;	
 }
 
@@ -69,8 +75,12 @@ a:link, a:visited {
 	margin-top: 30px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 95%;
+	width: 95%;	
 	color: #A8B2D1;
+}
+
+.longdesc-list {
+	list-style-type: square;
 }
 
 .tech-stack-list {		
@@ -78,8 +88,6 @@ a:link, a:visited {
 	text-align: center;
 	list-style: none;		
 	color: #64FFDA;
-	/*color: white;*/
-	/*color: #CCD6F6;*/	
 }
 
  .tech-stack-list li {
@@ -88,24 +96,29 @@ a:link, a:visited {
 	margin-left: 8px;
 	margin-right: 8px;
 	padding: 6px 6px;
-	font-weight: bold;
-	border: 1px solid #CCD6F6;
-}
-
-.project-longdesc .tech {
-	text-align: center;
-	color: white;
+	font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace;
+	font-weight: normal;
+	font-size: 13px;
+	/*border: 1px solid #CCD6F6;*/
+	border: 1px solid #0A192F;	
 }
 
 .project-photo {
-	max-width: 128px;
-	max-height: 226px;
+	max-width: 100px;	
+	max-height: auto;
+	margin-left: 5px;
+	border-radius: 5px;
+}
+
+.project-photo-big {
+	max-width: 150px;	
+	max-height: auto;
 	margin-left: 5px;
 	border-radius: 5px;
 }
 
 .googleplaylogo {
 	display: block;
-	max-width: 160px;
-	max-height: 80px;
+	max-width: 130px;
+	max-height: auto;	
 }
