@@ -98,23 +98,27 @@ a:link, a:visited {
 	padding: 6px 6px;
 	font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace;
 	font-weight: normal;
-	font-size: 13px;
-	/*border: 1px solid #CCD6F6;*/
+	font-size: 13px;	
 	border: 1px solid #0A192F;	
 }
 
 .project-photo {
-	max-width: 100px;	
-	max-height: auto;
-	margin-left: 5px;
-	border-radius: 5px;
+	max-width: 100px;
 }
 
 .project-photo-big {
 	max-width: 150px;	
+}
+
+.project-photo, .project-photo-big {
 	max-height: auto;
 	margin-left: 5px;
 	border-radius: 5px;
+	border: 2px solid black;
+}
+
+.project-photo:hover, .project-photo-big:hover {
+	border: 2px solid coral;
 }
 
 .googleplaylogo {
