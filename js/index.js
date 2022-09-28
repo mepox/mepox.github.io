@@ -1,7 +1,38 @@
 function onStart() {
 	console.log("Page ready.");
 	
-	addTitle("Projects");
+	/* Top Header */
+	addHeader("Hello World! My name is", "Laszlo Janku", "Junior Software Developer | Indie Game Developer");
+	
+	/* Menu */
+	var menu = [ "About", "Skills", "Projects" ];
+	//addMenu(menu);
+	
+	addDivider();
+	
+	/* About */
+	var about = "<p>An enthusiastic Indie Game Developer and Junior Software Developer with years of hands-on experience in various projects.</p>";	
+	//addBoxAndTitle("About", about);	
+	
+	/* Skills */	
+	var skills = 	"<ul class='longdesc-list'>" +
+					"<li>OOP concepts and common design patterns</li>" +
+					"<li>Core data structures and algorithms knowledge</li>" +
+					"<li>Clean code and SOLID principles</li>" +
+					"<li>Java, C# and Python (for scripting)</li>" +
+					"<li>HTML, CSS and JavaScript</li>" +
+					"<li>SQL queries</li>" +
+					"<li>Git, SVN</li>" +
+					"<li>Maven</li>" +
+					"<li>Spring Boot</li>" +
+					"<li>Basic unit testing (JUnit, Mockito)</li>" +
+					"<li>Eclipse IDE and Visual Studio Code</li>" +
+					"<li>Windows & Linux</li>" +
+					"</ul>";	
+	//addBoxAndTitle("Skills", skills);
+	
+	/* Projects */
+	addSectionTitle("Projects");
 	
 	var projectGroupTitles = [ "Recent projects on GitHub", "Commercial Projects" ];
 	generateProjectGroups(projectGroupTitles);
@@ -130,8 +161,8 @@ function onStart() {
 	addProject(1, title, shortdesc, longdesc, directory, photosName, photoClass, techStack);
 }
 
-function addTitle(text) {
-	document.getElementsByTagName("body")[0].innerHTML += "<div class='main-title'><h1>" + text + "</h1></div>";
+function addSectionTitle(text) {
+	document.getElementsByTagName("body")[0].innerHTML += "<div class='section-title'>" + text + "</div>";
 }
 
 function generateProjectGroups(titles) {
@@ -139,7 +170,7 @@ function generateProjectGroups(titles) {
 	
 	for (var i = 0; i < titles.length; i++) {
 		body.innerHTML += "<div class='project-group'>" +
-			"<div class='project-group-title'>" + "<h2>" + titles[i] + "</h2>" + "</div></div>";			
+			"<div class='project-group-title'>" + "<h2>~ " + titles[i] + " ~</h2>" + "</div></div>";			
 	}
 }
 
@@ -147,7 +178,7 @@ function addProject(groupId, title, shortDesc, longDesc, directory, photosName, 
 	var projectGroup = document.getElementsByClassName("project-group")[groupId];
 	
 	// Add project div
-	var toAdd = "<div class='project'></div><br><hr><br>";
+	var toAdd = "<div class='project'></div><br><hr class='project-divider'><br>";
 	projectGroup.innerHTML += toAdd;
 	
 	var projects = document.getElementsByClassName("project");
@@ -225,4 +256,50 @@ function addProjectPhotos(project, directory, photosName, photoClass) {
 	}
 	
 	project.innerHTML += toAdd;
+}
+
+function addHeader(prefix, title, subtitle) {
+	var body = document.getElementsByTagName("body")[0];
+	
+	body.innerHTML += 	"<div class='header'>" +
+						"<div class='header-prefix'>" + prefix + "</div>" +
+						"<div class='header-title'>" + title + "</div>" +
+						"<div class='header-subtitle'>" + subtitle + "</div>" +
+						"</div>";
+}
+
+function addDivider() {
+	var body = document.getElementsByTagName("body")[0];
+	
+	body.innerHTML += "<hr class='project-divider'>";
+}
+
+
+function addMenu(items) {
+	var body = document.getElementsByTagName("body")[0];
+	
+	var toAdd = "";
+	
+	toAdd +=   	"<div class='menuBox'>" +
+				"<ul class='menu-list'>";
+				
+	for (var i = 0; i < items.length; i++) {
+		toAdd += "<li class='menu-item'><a href='#" + items[i] + "'>" + items[i] + "</a></li>"; 
+	}
+	
+	toAdd += "</ul></div>";
+	
+	body.innerHTML += toAdd;
+}
+
+function addBoxAndTitle(title, text) {
+	addSectionTitle(title);
+	addBox(text);
+}
+
+function addBox(text) {
+	var body = document.getElementsByTagName("body")[0];
+	
+	body.innerHTML += 	"<div class='box'>" +
+						"<div class='box-content'>" +	text + "</div></div";
 }
