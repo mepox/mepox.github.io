@@ -105,7 +105,7 @@ function onStart() {
 					"<i>(Please note: may not available on Google Play if it's under Review)</i></p>";
 										
 	var directory ="projects/gameofmoves";
-	var photosName = [ "photo_1.png", "photo_2.png", "photo_3.png", "photo_4.png", "photo_5.png", "photo_6.png", "photo_7.png" ];
+	var photosName = [ "photo_1.png", "photo_2.png", "photo_3.png", "photo_4.png", "photo_5.png", "photo_7.png" ];
 	var photoClass = "project-photo";
 	var techStack = [ "Java", "C#", "Android", "Unity", "Git" ];
 	
