@@ -11,7 +11,7 @@ function onStart() {
 	addDivider();
 	
 	/* About */
-	var about = "<p>An enthusiastic Indie Game Developer and Junior Software Developer with years of hands-on experience in various (personal and commercial) projects.</p>" +				 
+	var about = "<p>An enthusiastic Junior Software Developer and Indie Game Developer with years of hands-on experience in various (personal and commercial) projects.</p>" +				 
 				"<p>Experience in coding and using different programming languages like Java, C#, Python (for scripting), JavaScript, HTML and CSS. " + 
 				"I am passionate about developing software and games. " +
 				"I am self-motivated and enjoy learning about new technologies and frameworks on my own. I can easily expand my knowledge if needed.</p>";	
