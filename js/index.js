@@ -5,14 +5,17 @@ function onStart() {
 	addHeader("Hello World! My name is", "Laszlo Janku", "Junior Software Developer | Indie Game Developer");
 	
 	/* Menu */
-	var menu = [ "About", "Skills", "Projects" ];
-	//addMenu(menu);
+	/*var menu = [ "About", "Skills", "Projects" ];
+	addMenu(menu);*/
 	
 	addDivider();
 	
 	/* About */
-	var about = "<p>An enthusiastic Indie Game Developer and Junior Software Developer with years of hands-on experience in various projects.</p>";	
-	//addBoxAndTitle("About", about);	
+	var about = "<p>An enthusiastic Indie Game Developer and Junior Software Developer with years of hands-on experience in various (personal and commercial) projects.</p>" +				 
+				"<p>Experience in coding and using different programming languages like Java, C#, Python (for scripting), JavaScript, HTML and CSS. " + 
+				"I am passionate about developing software and games. " +
+				"I am self-motivated and enjoy learning about new technologies and frameworks on my own. I can easily expand my knowledge if needed.</p>";	
+	addBoxAndTitle("About", about);	
 	
 	/* Skills */	
 	var skills = 	"<ul class='longdesc-list'>" +
@@ -25,11 +28,11 @@ function onStart() {
 					"<li>Git, SVN</li>" +
 					"<li>Maven</li>" +
 					"<li>Spring Boot</li>" +
-					"<li>Basic unit testing (JUnit, Mockito)</li>" +
+					"<li>Unit testing (JUnit, Mockito)</li>" +
 					"<li>Eclipse IDE and Visual Studio Code</li>" +
 					"<li>Windows & Linux</li>" +
 					"</ul>";	
-	//addBoxAndTitle("Skills", skills);
+	addBoxAndTitle("Skills", skills);
 	
 	/* Projects */
 	addSectionTitle("Projects");
