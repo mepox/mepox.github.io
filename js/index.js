@@ -140,7 +140,7 @@ function onStart() {
 	var title = "Brick Maniac";
 	var shortdesc = "Commercial Android game developed in a team of two.";
 	var longdesc =  "<p>The goal was to make a classic brick breaker game which is much more polished than the rest of the similar games in the Play Store. </p>" +				 
-					"<p><b>Brick Maniac</b> is a classic brick breaker game, where the users has to destroy all the bricks with the ball to complete the levels. </p>" +
+					"<p><b>Brick Maniac</b> is a classic brick breaker game, where the players has to destroy all the bricks with the ball to complete the levels. </p>" +
 					
 					"<ul class='longdesc-list'>" +
 					"<li>Developed the game's framework and half of the code</li>" +
