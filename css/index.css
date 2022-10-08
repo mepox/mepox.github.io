@@ -97,13 +97,13 @@ a:link, a:visited {
 
 .project-group {
 	text-align: center;
-	width: 50%;
+	/*width: 50%;
 	margin-left: auto;
-	margin-right: auto;
+	margin-right: auto;*/
 }
 
 @media (max-width: 1300px){
-  .project-group {
+  .box {
     width: 95%;
   }
 }
@@ -118,7 +118,6 @@ a:link, a:visited {
 .project {
 	padding-top: 20px;
 	padding-bottom: 20px;	
-	background-color: #172A45;
 }
 
 .project-title h3 {

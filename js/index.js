@@ -181,7 +181,7 @@ function addProject(groupId, title, shortDesc, longDesc, directory, photosName, 
 	var projectGroup = document.getElementsByClassName("project-group")[groupId];
 	
 	// Add project div
-	var toAdd = "<div class='project'></div><br><hr class='project-divider'><br>";
+	var toAdd = "<div class='project box'></div><br><hr class='project-divider'><br>";
 	projectGroup.innerHTML += toAdd;
 	
 	var projects = document.getElementsByClassName("project");
