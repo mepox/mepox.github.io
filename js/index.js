@@ -40,9 +40,9 @@ function onStart() {
 	var projectGroupTitles = [ "Recent projects on GitHub", "Commercial Projects" ];
 	generateProjectGroups(projectGroupTitles);
 	
-	/* Workout Tracker */
+	/* FitBuddy */
 	
-	var title = "Workout Tracker";
+	var title = "FitBuddy";
 	var shortdesc = "Workout Tracker app made with Spring Boot.";
 	var longdesc =	"<ul class='longdesc-list'>" +
 					"<li>Users are able to log their workouts and create their own exercises</li>" +
@@ -53,18 +53,18 @@ function onStart() {
 					"</ul>" +
 					"<li>REST API design to handle the clients' (GET, POST, PUT, DELETE) requests</li>" +
 					"<li>Spring Boot Security manages the users authentication</li>" +
-					"<li>H2 in-memory database to store the data</li>" +
+					"<li>Frontend with Bootstrap 5 including JavaScript, HTML and CSS</li>" +
 					"</ul>" +
 
-					"<p><a href='https://github.com/mepox/simple-workouttracker' target='_blank'>View Source Code</a></p>" +
-					"<p><a href='https://spring-workouttracker.herokuapp.com' target='_blank'>Live Demo</a>" +
+					"<p><a href='https://github.com/mepox/fitbuddy' target='_blank'>View Source Code</a></p>" +
+					"<p><a href='https://fitbuddy-demo.herokuapp.com' target='_blank'>Live Demo</a>" +
 					"<i> (Please note: app may take some time to start on Heroku.)</i></p>" +
 					"<p><i>username: user<br>password: user</i></p>";
 					
-	var directory = "projects/workouttracker";
-	var photosName = [ "photo_1.png", "photo_2.png" ];
+	var directory = "projects/fitbuddy";
+	var photosName = [ "fitbuddy_login.jpg", "fitbuddy_register.jpg", "fitbuddy_history.jpg", "fitbuddy_exercises.jpg" ];
 	var photoClass = "project-photo-big";
-	var techStack = [ "Java", "Spring Boot", "Spring Security", "JavaScript", "HTML", "CSS", "REST API", "SQL", "Git" ];	
+	var techStack = [ "Java", "Spring Boot", "Spring Security", "REST API", "Lombok", "Bootstrap 5", "SQL", "Git", "Maven" ];	
 	
 	addProject(0, title, shortdesc, longdesc, directory, photosName, photoClass, techStack);
 	
@@ -76,7 +76,7 @@ function onStart() {
 					"<li>Shortens the users' URL</li>" +
 					"<li>Generates an unique key for each URL</li>" +
 					"<li>REST API design to handle the clients' (GET, POST, DELETE) requests</li>" +
-					"<li>H2 in-memory database to store the data</li>" +
+					"<li>Frontend uses plain JavaScript, HTML and CSS</li>" +
 					"</ul>" +				
 					
 					"<p><a href='https://github.com/mepox/simple-urlshortener' target='_blank'>View Source Code</a></p>" +
