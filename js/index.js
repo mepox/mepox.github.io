@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", () => {
+	onStart();
+});
+
 function onStart() {
 	console.log("Page ready.");
 	
@@ -29,7 +33,8 @@ function onStart() {
 					"<li>Maven</li>" +
 					"<li>Spring Boot</li>" +
 					"<li>Unit testing (JUnit, Mockito)</li>" +
-					"<li>Eclipse IDE and Visual Studio Code</li>" +
+					"<li>Understand CI/CD concepts</li>" +
+					"<li>Eclipse IDE, IntelliJ IDEA and Visual Studio Code</li>" +
 					"<li>Windows & Linux</li>" +
 					"</ul>";	
 	addBoxAndTitle("Skills", skills);
