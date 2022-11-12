@@ -67,7 +67,7 @@ function onStart() {
 					"<p><i>username: user<br>password: user</i></p>";
 					
 	var directory = "projects/fitbuddy";
-	var photosName = [ "fitbuddy_login.jpg", "fitbuddy_register.jpg", "fitbuddy_history.jpg", "fitbuddy_exercises.jpg" ];
+	var photosName = [ "fitbuddy_login.png", "fitbuddy_register.png", "fitbuddy_history.png", "fitbuddy_exercises.png" ];
 	var photoClass = "project-photo-big";
 	var techStack = [ "Java", "Spring Boot", "Spring Security", "REST API", "Lombok", "Bootstrap 5", "SQL", "Git", "Maven" ];	
 	
