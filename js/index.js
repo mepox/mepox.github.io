@@ -15,8 +15,10 @@ function onStart() {
 	addDivider();
 	
 	/* About */
-	var about = "<p>An enthusiastic Junior Software Developer and Indie Game Developer with years of hands-on experience in various (personal and commercial) projects.</p>" +				 
-				"<p>Experience in coding and using different programming languages like Java, C#, Python (for scripting), JavaScript, HTML and CSS. " + 
+	var about = "<p>An enthusiastic Junior Software Developer and Indie Game Developer with years of hands-on" +
+				"experience in various (personal and commercial) projects.</p>" +				 
+				"<p>Experience in coding and using different programming languages like Java, C#, " + 
+				"Python (for scripting), JavaScript, HTML and CSS. " + 
 				"I am passionate about developing software and games. " +
 				"I am self-motivated and enjoy learning about new technologies and frameworks.</p>";	
 	addBoxAndTitle("About", about);	
@@ -50,19 +52,19 @@ function onStart() {
 	var title = "FitBuddy";
 	var shortdesc = "Workout Tracker app made with Spring Boot.";
 	var longdesc =	"<ul class='longdesc-list'>" +
-					"<li>Users are able to log their workouts and create their own exercises</li>" +
-					"<ul class='longdesc-sublist'>" +
-					"<li>Register and login to the application</li>" +
-					"<li>Create custom exercises</li>" +
-					"<li>Log workout by adding custom exercises to a specific date</li>" +
-					"</ul>" +
-					"<li>REST API design to handle the clients' (GET, POST, PUT, DELETE) requests</li>" +
-					"<li>Spring Boot Security manages the users authentication</li>" +
-					"<li>Frontend with Bootstrap 5 including JavaScript, HTML and CSS</li>" +
+					"<li>Open source project on GitHub</li>" +
+					"<li>Managed and delegated tasks to contributors</li>" +
+					"<li>Implemented REST API design to handle the clients’ (GET, POST, PUT, DELETE) requests</li>" +
+					"<li>Incorporated the DTO design pattern into the project</li>" +
+					"<li>Integrated Spring Boot Security to manage the users authentication</li>" +
+					"<li>Frontend made with Bootstrap 5 (JavaScript, HTML and CSS)</li>" +
+					"<li>Features: Users are able to register, login, create exercises and log their workouts</li>" +
 					"</ul>" +
 
-					"<p><a href='https://github.com/mepox/fitbuddy' target='_blank'>View Source Code</a></p>" +
-					"<p><a href='https://fitbuddy-demo.herokuapp.com' target='_blank'>Live Demo</a>" +
+					"<p>" + 
+					"<a href='https://github.com/mepox/fitbuddy' target='_blank'>View Source Code on GitHub</a></p>" +
+					"<p>" +
+					"<a href='https://fitbuddy-demo.herokuapp.com' target='_blank'>Live Demo</a>" +
 					"<i> (Please note: app may take some time to start on Heroku.)</i></p>" +
 					"<p><i>username: user<br>password: user</i></p>";
 					
@@ -84,7 +86,8 @@ function onStart() {
 					"<li>Frontend uses plain JavaScript, HTML and CSS</li>" +
 					"</ul>" +				
 					
-					"<p><a href='https://github.com/mepox/simple-urlshortener' target='_blank'>View Source Code</a></p>" +
+					"<p><a href='https://github.com/mepox/simple-urlshortener' target='_blank'>" + 
+					"View Source Code on GitHub</a></p>" +
 					"<p><a href='https://spring-urlshortener.herokuapp.com' target='_blank'>Live Demo</a>" +
 					"<i> (Please note: app may take some time to start on Heroku.)</i></p>";
 					
@@ -99,8 +102,10 @@ function onStart() {
 	
 	var title = "Game Of Moves";
 	var shortdesc = "Commercial Android game developed in a team of two.";
-	var longdesc = "<p>The goal was to make a game which is challenging but also slow paced which is much more suited for a mobile game. </p>" +
-					"<p><b>Game Of Moves</b> is a puzzle game where the players has to move all the boxes to the destination zones however each boxes has limited moves. </p>" +
+	var longdesc = "<p>The goal was to make a game which is challenging but also slow paced which is much more suited" +
+					"for a mobile game. </p>" +
+					"<p><b>Game Of Moves</b> is a puzzle game where the players has to move all the boxes to the" + 
+					"destination zones however each boxes has limited moves. </p>" +
 					
 					"<ul class='longdesc-list'>" +
 					"<li>Developed the game's framework and half of the code</li>" +
@@ -109,7 +114,10 @@ function onStart() {
 					"</ul>" +
 					
 					"<p>The game reached about 500 downloads.</p>" +
-					"<p><a href='https://play.google.com/store/apps/details?id=com.pixelbits.thegameofmoves' target='_blank'><img alt='Get it on Google Play' src='logos/googleplay.png' class='googleplaylogo'/></a>" +
+					"<p>" + 
+					"<a href='https://play.google.com/store/apps/details?id=com.pixelbits.thegameofmoves' " + 
+					"target='_blank'><img alt='Get it on Google Play' src='logos/googleplay.png' " + 
+					"class='googleplaylogo'/></a>" +
 					"<i>(Please note: may not available on Google Play if it's under Review)</i></p>";
 										
 	var directory ="projects/gameofmoves";
@@ -123,8 +131,10 @@ function onStart() {
 	
 	var title = "Bouncy Ball";
 	var shortdesc = "Commercial Android game developed by myself.";
-	var longdesc = "<p>The goal was to make an addicting game where the users are keep coming back to try to beat their previous highscores. </p>" +
-					"<p><b>Bouncy Ball</b> is an action game, where the players has to jump higher and higher by tapping the screen and avoid the dangerous spikes. </p>" +
+	var longdesc = "<p>The goal was to make an addicting game where the users are keep coming back to try to beat" + 
+					"their previous highscores. </p>" +
+					"<p><b>Bouncy Ball</b> is an action game, where the players has to jump higher and higher by " + 
+					"tapping the screen and avoid the dangerous spikes. </p>" +
 										
 					"<ul class='longdesc-list'>" +					
 					"<li>Developed the game's framework and the core gameplay</li>" +
@@ -133,7 +143,9 @@ function onStart() {
 					"</ul>" +										
 					
 					"<p>The game reached about 1000 downloads.</p>" +
-					"<p><a href='https://play.google.com/store/apps/details?id=com.laszlojanku.bouncyball' target='_blank'><img alt='Get it on Google Play' src='logos/googleplay.png' class='googleplaylogo'/></a>" +
+					"<p><a href='https://play.google.com/store/apps/details?id=com.laszlojanku.bouncyball' " + 
+					"target='_blank'><img alt='Get it on Google Play' src='logos/googleplay.png' " + 
+					"class='googleplaylogo'/></a>" +
 					"<i>(Please note: may not available on Google Play if it's under Review)</i></p>";
 					
 	var directory ="projects/bouncyball";
@@ -147,8 +159,10 @@ function onStart() {
 	
 	var title = "Brick Maniac";
 	var shortdesc = "Commercial Android game developed in a team of two.";
-	var longdesc =  "<p>The goal was to make a classic brick breaker game which is much more polished than the rest of the similar games in the Play Store. </p>" +				 
-					"<p><b>Brick Maniac</b> is a classic brick breaker game, where the players has to destroy all the bricks with the ball to complete the levels. </p>" +
+	var longdesc =  "<p>The goal was to make a classic brick breaker game which is much more polished than the rest " + 
+	"of the similar games in the Play Store. </p>" +				 
+					"<p><b>Brick Maniac</b> is a classic brick breaker game, where the players has to destroy all " + 
+					"the bricks with the ball to complete the levels. </p>" +
 					
 					"<ul class='longdesc-list'>" +
 					"<li>Developed the game's framework and half of the code</li>" +
@@ -158,7 +172,9 @@ function onStart() {
 					"</ul>" +
 					
 					"<p>The game reached about 500 downloads.</p>" +
-					"<p><a href='https://play.google.com/store/apps/details?id=com.tupix.brickmaniacfree' target='_blank'><img alt='Get it on Google Play' src='logos/googleplay.png' class='googleplaylogo'/></a>" +
+					"<p><a href='https://play.google.com/store/apps/details?id=com.tupix.brickmaniacfree' " + 
+					"target='_blank'><img alt='Get it on Google Play' src='logos/googleplay.png' " +
+					"class='googleplaylogo'/></a>" +
 					"<i>(Please note: may not available on Google Play if it's under Review)</i></p>";
 
 	var directory ="projects/brickmaniac";
