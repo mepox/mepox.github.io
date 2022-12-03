@@ -64,8 +64,8 @@ function onStart() {
 					"<p>" + 
 					"<a href='https://github.com/mepox/fitbuddy' target='_blank'>View Source Code on GitHub</a></p>" +
 					"<p>" +
-					"<a href='https://fitbuddy-demo.herokuapp.com' target='_blank'>Live Demo</a>" +
-					"<i> (Please note: app may take some time to start on Heroku.)</i></p>" +
+					"<a href='https://fitbuddy-demo.up.railway.app' target='_blank'>Live Demo</a>" +
+					"<i> (Please note: app may take some time to start on Railway.)</i></p>" +
 					"<p><i>username: user<br>password: user</i></p>";
 					
 	var directory = "projects/fitbuddy";
@@ -87,9 +87,7 @@ function onStart() {
 					"</ul>" +				
 					
 					"<p><a href='https://github.com/mepox/simple-urlshortener' target='_blank'>" + 
-					"View Source Code on GitHub</a></p>" +
-					"<p><a href='https://spring-urlshortener.herokuapp.com' target='_blank'>Live Demo</a>" +
-					"<i> (Please note: app may take some time to start on Heroku.)</i></p>";
+					"View Source Code on GitHub</a></p>";
 					
 	var directory = "projects/urlshortener";
 	var photosName = [ "photo_1.png" ];
