@@ -15,7 +15,7 @@ function onStart() {
 	addDivider();
 	
 	/* About */
-	var about = "<p>An enthusiastic Junior Software Developer and Indie Game Developer with years of hands-on" +
+	var about = "<p>An enthusiastic Junior Software Developer and Indie Game Developer with years of hands-on " +
 				"experience in various (personal and commercial) projects.</p>" +				 
 				"<p>Experience in coding and using different programming languages like Java, C#, " + 
 				"Python (for scripting), JavaScript, HTML and CSS. " + 
