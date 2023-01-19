@@ -28,15 +28,35 @@ function onStart() {
 					"<li>OOP concepts and common design patterns</li>" +
 					"<li>Core data structures and algorithms knowledge</li>" +
 					"<li>Clean code and SOLID principles</li>" +
+					"</ul>" +
+
+					"<ul class='longdesc-list'>" +
 					"<li>Java, C# and Python (for scripting)</li>" +
 					"<li>HTML, CSS and JavaScript</li>" +
 					"<li>SQL queries</li>" +
+					"</ul>" +
+
+					"<ul class='longdesc-list'>" +
 					"<li>Git, SVN</li>" +
+					"<li>Understand CI/CD concepts</li>" +
+					"</ul>" +
+
+					"<ul class='longdesc-list'>" +
 					"<li>Maven</li>" +
 					"<li>Spring Boot</li>" +
 					"<li>Unit testing (JUnit, Mockito)</li>" +
-					"<li>Understand CI/CD concepts</li>" +
-					"<li>Eclipse IDE, IntelliJ IDEA and Visual Studio Code</li>" +
+					"<li>Eclipse IDE and IntelliJ IDEA</li>" +
+					"</ul>" +
+					
+					"<ul class='longdesc-list'>" +
+					"<li>Unity cross-platform game engine</li>" +
+					"<li>Script composition approach</li>" +
+					"<li>UI elements, Physics and Particle system</li>" + 
+					"<li>Lights and Audio</li>" +
+					"<li>Visual Studio Community and Visual Studio Code</li>" +
+					"</ul>" +
+
+					"<ul class='longdesc-list'>" +
 					"<li>Windows & Linux</li>" +
 					"</ul>";	
 	addBoxAndTitle("Skills", skills);
