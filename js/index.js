@@ -43,16 +43,15 @@ function onStart() {
 
 					"<ul class='longdesc-list'>" +
 					"<li>Maven</li>" +
-					"<li>Spring Boot</li>" +
+					"<li>Experience with Spring Boot</li>" +
 					"<li>Unit testing (JUnit, Mockito)</li>" +
 					"<li>Eclipse IDE and IntelliJ IDEA</li>" +
 					"</ul>" +
 					
 					"<ul class='longdesc-list'>" +
-					"<li>Unity cross-platform game engine</li>" +
-					"<li>Script composition approach</li>" +
-					"<li>UI elements, Physics and Particle system</li>" + 
-					"<li>Lights and Audio</li>" +
+					"<li>Excellent knowledge of the Unity cross-platform game engine</li>" +
+					"<li>Understand composite design pattern</li>" +
+					"<li>Experience with UI elements, Physics, Particle system, Lights and Audio</li>" +
 					"<li>Visual Studio Community and Visual Studio Code</li>" +
 					"</ul>" +
 
