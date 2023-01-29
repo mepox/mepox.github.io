@@ -50,9 +50,10 @@ function onStart() {
 					
 					"<ul class='longdesc-list'>" +
 					"<li>Excellent knowledge of the Unity cross-platform game engine</li>" +
-					"<li>Understand composite design pattern</li>" +
 					"<li>Experience with UI elements, Physics, Particle system, Lights and Audio</li>" +
-					"<li>Visual Studio Community and Visual Studio Code</li>" +
+					"<li>Understand design patterns and game design principles</li>" +
+					"<li>Experience with mobile and PC game development</li>" +
+					"<li>Visual Studio and Visual Studio Code</li>" +
 					"</ul>" +
 
 					"<ul class='longdesc-list'>" +
