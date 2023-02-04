@@ -126,7 +126,9 @@ function onStart() {
 					"destination zones however each boxes has limited moves. </p>" +
 					
 					"<ul class='longdesc-list'>" +
-					"<li>Planned and developed the game's framework and core gameplay</li>" +
+					"<li>Multi-level puzzle game made with Unity</li>" +
+					"<li>Designed core gameplay and programmed main game logic</li>" +
+					"<li>Assisted with level design</li>" +
 					"<li>Integrated Facebook API so the users are able to share their progress on Social Media</li>" +
 					"<li>Managed the Google Play's Developer Console</li>" +
 					"</ul>" +
@@ -155,8 +157,12 @@ function onStart() {
 					"tapping the screen and avoid the dangerous spikes. </p>" +
 										
 					"<ul class='longdesc-list'>" +					
-					"<li>Planned and developed the game's framework and core gameplay</li>" +
+					"<li>Casual action game made with Unity</li>" +
+					"<li>Planned and developed the core gameplay</li>" +
+					"<li>Designed game mechanics</li>" +
+					"<li>Created game assets</li>" +
 					"<li>Integrated Facebook API so the users are able to share their progress on Social Media</li>" +
+					"<li>Conducted Market Research</li>" +
 					"<li>Managed the Google Play's Developer Console</li>" +
 					"</ul>" +										
 					
@@ -183,8 +189,8 @@ function onStart() {
 					"the bricks with the ball to complete the levels. </p>" +
 					
 					"<ul class='longdesc-list'>" +
-					"<li>Planned and developed the game's framework and core gameplay</li>" +
-					"<li>Uses custom game engine</li>" +
+					"<li>Designed core gameplay and programmed main game logic</li>" +
+					"<li>Engineered a custom game engine</li>" +
 					"<li>Integrated Facebook API so the users are able to share their progress on Social Media</li>" +
 					"<li>Managed the Google Play's Developer Console</li>" +
 					"</ul>" +
