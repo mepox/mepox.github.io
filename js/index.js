@@ -49,7 +49,7 @@ function onStart() {
 					"</ul>" +
 					
 					"<ul class='longdesc-list'>" +
-					"<li>Excellent knowledge of the Unity cross-platform game engine</li>" +
+					"<li>Excellent knowledge of the Unity cross-platform game engine (since version 5)</li>" +
 					"<li>Experience with UI elements, Physics, Particle system, Lights and Audio</li>" +
 					"<li>Understand design patterns and game design principles</li>" +
 					"<li>Experience with mobile and PC game development</li>" +
@@ -120,13 +120,13 @@ function onStart() {
 	
 	var title = "Game Of Moves";
 	var shortdesc = "Commercial Android game developed in a team of two.";
-	var longdesc = "<p>The goal was to make a game which is challenging but also slow paced which is much more suited" +
+	var longdesc = "<p>The goal was to make a game which is challenging but also slow paced which is much more suited " +
 					"for a mobile game. </p>" +
-					"<p><b>Game Of Moves</b> is a puzzle game where the players has to move all the boxes to the" + 
+					"<p><b>Game Of Moves</b> is a multi-level puzzle game where the players has to move all the boxes to the " + 
 					"destination zones however each boxes has limited moves. </p>" +
 					
 					"<ul class='longdesc-list'>" +
-					"<li>Developed the game's framework and half of the code</li>" +
+					"<li>Planned and developed the game's framework and core gameplay</li>" +
 					"<li>Integrated Facebook API so the users are able to share their progress on Social Media</li>" +
 					"<li>Managed the Google Play's Developer Console</li>" +
 					"</ul>" +
@@ -149,13 +149,13 @@ function onStart() {
 	
 	var title = "Bouncy Ball";
 	var shortdesc = "Commercial Android game developed by myself.";
-	var longdesc = "<p>The goal was to make an addicting game where the users are keep coming back to try to beat" + 
+	var longdesc = "<p>The goal was to make an addicting game where the users are keep coming back to try to beat " + 
 					"their previous highscores. </p>" +
 					"<p><b>Bouncy Ball</b> is an action game, where the players has to jump higher and higher by " + 
 					"tapping the screen and avoid the dangerous spikes. </p>" +
 										
 					"<ul class='longdesc-list'>" +					
-					"<li>Developed the game's framework and the core gameplay</li>" +
+					"<li>Planned and developed the game's framework and core gameplay</li>" +
 					"<li>Integrated Facebook API so the users are able to share their progress on Social Media</li>" +
 					"<li>Managed the Google Play's Developer Console</li>" +
 					"</ul>" +										
@@ -183,7 +183,7 @@ function onStart() {
 					"the bricks with the ball to complete the levels. </p>" +
 					
 					"<ul class='longdesc-list'>" +
-					"<li>Developed the game's framework and half of the code</li>" +
+					"<li>Planned and developed the game's framework and core gameplay</li>" +
 					"<li>Uses custom game engine</li>" +
 					"<li>Integrated Facebook API so the users are able to share their progress on Social Media</li>" +
 					"<li>Managed the Google Play's Developer Console</li>" +
