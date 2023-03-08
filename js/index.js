@@ -102,7 +102,7 @@ function onStart() {
 					"<p>For user security, the application integrates Spring Boot Security, providing robust authentication and authorization features.</p>" +
 
 					"<p>The frontend is built with Bootstrap 5 and uses JavaScript, HTML, and CSS to deliver an intuitive and responsive user experience. " +
-					"Users can register, log in, create exercises, and log their workouts with ease, making it simple to track and manage their fitness goals.</p>"
+					"Users can register, log in, create exercises, and log their workouts with ease, making it simple to track and manage their fitness goals.</p>" +
 
 					"<p>" + 
 					"<a href='https://github.com/mepox/fitbuddy' target='_blank'>View Source Code on GitHub</a></p>" +
