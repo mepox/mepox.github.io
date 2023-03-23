@@ -42,6 +42,11 @@ a:link, a:visited {
 	color: #CCD6F6;
 }
 
+.footer {
+	text-align: center;
+	color: #CCD6F6;
+}
+
 /* MENU */
 
 .menuBox {

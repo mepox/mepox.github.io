@@ -279,6 +279,10 @@ function onStart() {
 	var techStack = [ "Java", "Android", "SVN" ];
 	
 	addProject(1, title, shortdesc, longdesc, directory, photosName, photoClass, techStack);
+
+	/* Add Footer */
+	var today = new Date().toLocaleDateString();
+	addFooter(today);
 }
 
 function addSectionTitle(text) {
@@ -369,7 +373,7 @@ function addProjectPhotos(project, directory, photosName, photoClass) {
 		for (var i = 0; i < photosName.length; i++) {
 			var fullPhotoName = directory + "/" + photosName[i];
 			toAdd += "<a href='" + fullPhotoName + "' target='_blank'>" +
-					"<img src='" + fullPhotoName + "' class='" + photoClass + "'></a>";	
+					"<img src='" + fullPhotoName + "' class='" + photoClass + "' alt='Project Screenshot'></a>";	
 		}
 		
 		toAdd += "</div>";
@@ -381,11 +385,11 @@ function addProjectPhotos(project, directory, photosName, photoClass) {
 function addHeader(prefix, title, subtitle) {
 	var body = document.getElementsByTagName("body")[0];
 	
-	body.innerHTML += 	"<div class='header'>" +
+	body.innerHTML += 	"<header><div class='header'>" +
 						"<div class='header-prefix'>" + prefix + "</div>" +
 						"<div class='header-title'>" + title + "</div>" +
 						"<div class='header-subtitle'>" + subtitle + "</div>" +
-						"</div>";
+						"</div></header>";
 }
 
 function addDivider() {
@@ -422,4 +426,10 @@ function addBox(text) {
 	
 	body.innerHTML += 	"<div class='box'>" +
 						"<div class='box-content'>" +	text + "</div></div";
+}
+
+function addFooter(footer) {
+	var body = document.getElementsByTagName("body")[0];	
+
+	body.innerHTML += "<footer class='footer'>" + footer + "</footer>";
 }
