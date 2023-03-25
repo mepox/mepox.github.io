@@ -6,7 +6,7 @@ function onStart() {
 	console.log("Page ready.");
 	
 	/* Top Header */
-	addHeader("Hello World! My name is", "Laszlo Janku", "Junior Software Developer | Indie Game Developer");
+	addHeader("Hello World! My name is", "Laszlo Janku", "Software Developer | Indie Game Developer");
 	
 	/* Menu */
 	/*var menu = [ "About", "Skills", "Projects" ];
@@ -15,28 +15,17 @@ function onStart() {
 	addDivider();
 	
 	/* About */
-	/*var about = "<p>An enthusiastic Junior Software Developer and Indie Game Developer with years of hands-on " +
-				"experience in various (personal and commercial) projects.</p>" +				 
-				"<p>Experience in coding and using different programming languages like Java, C#, " + 
-				"Python (for scripting), JavaScript, HTML and CSS. " + 
-				"I am passionate about developing software and games. " +
-				"I am self-motivated and enjoy learning about new technologies and frameworks.</p>";*/
-	var about = "<p>As an enthusiastic junior software developer and indie game developer, " +
-				"I bring years of hands-on experience in various personal and commercial projects to every role I undertake.</p>" +
-
-				"<p>With extensive experience coding in multiple programming languages, including Java, C#, Python (for scripting), " +
-				"JavaScript, HTML, and CSS, I am passionate about creating high-quality software and games that deliver an exceptional user experience.</p>" +
-
+	let about = "<p>An enthusiastic Software Developer and Indie Game Developer with years of hands-on " +
+				"experience in various personal and commercial projects.</p>" +
+				"<p>Experience coding in multiple programming languages, including Java, C#, Python (for scripting), " +
+				"JavaScript, HTML, and CSS. I am passionate about creating high-quality software and games that deliver an exceptional user experience.</p>" +
 				"<p>Self-motivated and always eager to learn about new technologies and frameworks, " +
-				"I thrive on challenges and enjoy working collaboratively with others to develop innovative solutions that meet and exceed expectations.</p>" +
+				"I thrive on challenges and enjoy working collaboratively with others to develop innovative solutions that meet and exceed expectations.</p>";
 
-				"<p>Whether working on solo projects or as part of a team, I take pride in my ability to deliver quality results within tight deadlines. " +
-				"With a keen eye for detail and a passion for delivering excellence, I am committed to creating software and games that inspire and delight users.</p>";
-
-	addBoxAndTitle("About", about);	
+	addBoxAndTitle("About Me", about);	
 	
 	/* Skills */	
-	var skills = 	"<ul class='longdesc-list'>" +
+	let skills = 	"<ul class='longdesc-list'>" +
 					"<li>OOP concepts and common design patterns</li>" +
 					"<li>Core data structures and algorithms knowledge</li>" +
 					"<li>Clean code and SOLID principles</li>" +
@@ -76,14 +65,14 @@ function onStart() {
 	/* Projects */
 	addSectionTitle("Projects");
 	
-	var projectGroupTitles = [ "Recent projects on GitHub", "Commercial Projects" ];
+	let projectGroupTitles = [ "Recent projects on GitHub", "Commercial Projects" ];
 	generateProjectGroups(projectGroupTitles);
 	
 	/* FitBuddy */
 	
-	var title = "FitBuddy";
-	var shortdesc = "Workout Tracker app made with Spring Boot.";
-	var longdesc =	/*"<ul class='longdesc-list'>" +
+	let title = "FitBuddy";
+	let shortdesc = "Workout Tracker app made with Spring Boot.";
+	let longdesc =	/*"<ul class='longdesc-list'>" +
 					"<li>Open source project on GitHub</li>" +
 					"<li>Managed and delegated tasks to contributors</li>" +
 					"<li>Implemented REST API design to handle the clients’ (GET, POST, PUT, DELETE) requests</li>" +
@@ -93,7 +82,7 @@ function onStart() {
 					"<li>Features: Users are able to register, login, create exercises and log their workouts</li>" +
 					"</ul>" +*/
 					"<p>This is an open source workout tracker application built with Spring Boot and available on GitHub. " +
-					"The project is managed collaboratively, with tasks delegated to contributors to ensure high-quality code and functionality.</p>" +
+					"The project is managed by myself. I delegated some tasks to contributors and I oversaw them to ensure high-quality code and functionality.</p>" +
 
 					"<p>The application implements a RESTful API design that handles clients' requests (including GET, POST, PUT, and DELETE) " +
 					"for exercises and workout logs. The project also incorporates the DTO (Data Transfer Object) design pattern " +
@@ -111,18 +100,18 @@ function onStart() {
 					"<i> (Please note: app may take some time to start on Railway.)</i></p>" +
 					"<p><i>username: user<br>password: user</i></p>";
 					
-	var directory = "projects/fitbuddy";
-	var photosName = [ "fitbuddy_login.png", "fitbuddy_register.png", "fitbuddy_history.png", "fitbuddy_exercises.png" ];
-	var photoClass = "project-photo-big";
-	var techStack = [ "Java", "Spring Boot", "Spring Security", "REST API", "Lombok", "Bootstrap 5", "SQL", "Git", "Maven" ];	
+	let directory = "projects/fitbuddy";
+	let photosName = [ "fitbuddy_login.png", "fitbuddy_register.png", "fitbuddy_history.png", "fitbuddy_exercises.png" ];
+	let photoClass = "project-photo-big";
+	let techStack = [ "Java", "Spring Boot", "Spring Security", "REST API", "Lombok", "Bootstrap 5", "SQL", "Git", "Maven" ];	
 	
 	addProject(0, title, shortdesc, longdesc, directory, photosName, photoClass, techStack);
 	
 	/* URL Shortener */
 	
-	var title = "URL Shortener";
-	var shortdesc = "URL Shortener made with Spring Boot.";
-	var longdesc = 	/*"<ul class='longdesc-list'>" +
+	title = "URL Shortener";
+	shortdesc = "URL Shortener made with Spring Boot.";
+	longdesc = 	/*"<ul class='longdesc-list'>" +
 					"<li>Shortens the users' URL</li>" +
 					"<li>Generates an unique key for each URL</li>" +
 					"<li>REST API design to handle the clients' (GET, POST, DELETE) requests</li>" +
@@ -142,18 +131,18 @@ function onStart() {
 					"<p><a href='https://github.com/mepox/simple-urlshortener' target='_blank'>" + 
 					"View Source Code on GitHub</a></p>";
 					
-	var directory = "projects/urlshortener";
-	var photosName = [ "photo_1.png" ];
-	var photoClass = "project-photo-big";
-	var techStack = [ "Java", "Spring Boot", "JavaScript", "HTML", "CSS", "REST API", "SQL", "Git" ];
+	directory = "projects/urlshortener";
+	photosName = [ "photo_1.png" ];
+	photoClass = "project-photo-big";
+	techStack = [ "Java", "Spring Boot", "JavaScript", "HTML", "CSS", "REST API", "SQL", "Git" ];
 	
 	addProject(0, title, shortdesc, longdesc, directory, photosName, photoClass, techStack);
 	
 	/* Game Of Moves */
 	
-	var title = "Game Of Moves";
-	var shortdesc = "Commercial Android game developed in a team of two.";
-	var longdesc =  /*"<p>The goal was to make a game which is challenging but also slow paced which is much more suited " +
+	title = "Game Of Moves";
+	shortdesc = "Commercial Android game developed in a team of two.";
+	longdesc =  /*"<p>The goal was to make a game which is challenging but also slow paced which is much more suited " +
 					"for a mobile game. </p>" +
 					"<p><b>Game Of Moves</b> is a multi-level puzzle game where the players has to move all the boxes to the " + 
 					"destination zones however each boxes has limited moves. </p>" +
@@ -187,18 +176,18 @@ function onStart() {
 					"class='googleplaylogo'/></a>" +
 					"<i>(Please note: may not available on Google Play if it's under Review)</i></p>";
 										
-	var directory ="projects/gameofmoves";
-	var photosName = [ "photo_1.png", "photo_2.png", "photo_3.png", "photo_4.png", "photo_5.png", "photo_7.png" ];
-	var photoClass = "project-photo";
-	var techStack = [ "Java", "C#", "Android", "Unity", "Git" ];
+	directory ="projects/gameofmoves";
+	photosName = [ "photo_1.png", "photo_2.png", "photo_3.png", "photo_4.png", "photo_5.png", "photo_7.png" ];
+	photoClass = "project-photo";
+	techStack = [ "Java", "C#", "Android", "Unity", "Git" ];
 	
 	addProject(1, title, shortdesc, longdesc, directory, photosName, photoClass, techStack);
 	
 	/* Bouncy Ball */
 	
-	var title = "Bouncy Ball";
-	var shortdesc = "Commercial Android game developed by myself.";
-	var longdesc =  /*"<p>The goal was to make an addicting game where the users are keep coming back to try to beat " + 
+	title = "Bouncy Ball";
+	shortdesc = "Commercial Android game developed by myself.";
+	longdesc =  /*"<p>The goal was to make an addicting game where the users are keep coming back to try to beat " + 
 					"their previous highscores. </p>" +
 					"<p><b>Bouncy Ball</b> is an action game, where the players has to jump higher and higher by " + 
 					"tapping the screen and avoid the dangerous spikes. </p>" +
@@ -232,18 +221,18 @@ function onStart() {
 					"class='googleplaylogo'/></a>" +
 					"<i>(Please note: may not available on Google Play if it's under Review)</i></p>";
 					
-	var directory ="projects/bouncyball";
-	var photosName = [ "photo_1.png", "photo_2.png", "photo_3.png", "photo_4.png", "photo_5.png", "photo_6.png" ];
-	var photoClass = "project-photo";
-	var techStack = [ "Java", "C#", "Android", "Unity", "Git" ];
+	directory ="projects/bouncyball";
+	photosName = [ "photo_1.png", "photo_2.png", "photo_3.png", "photo_4.png", "photo_5.png", "photo_6.png" ];
+	photoClass = "project-photo";
+	techStack = [ "Java", "C#", "Android", "Unity", "Git" ];
 	
 	addProject(1, title, shortdesc, longdesc, directory, photosName, photoClass, techStack);
 	
 	/* Brick Maniac */
 	
-	var title = "Brick Maniac";
-	var shortdesc = "Commercial Android game developed in a team of two.";
-	var longdesc =  /*"<p>The goal was to make a classic brick breaker game which is much more polished than the rest " + 
+	title = "Brick Maniac";
+	shortdesc = "Commercial Android game developed in a team of two.";
+	longdesc =  /*"<p>The goal was to make a classic brick breaker game which is much more polished than the rest " + 
 					"of the similar games in the Play Store. </p>" +				 
 					"<p><b>Brick Maniac</b> is a classic brick breaker game, where the players has to destroy all " + 
 					"the bricks with the ball to complete the levels. </p>" +
@@ -273,15 +262,15 @@ function onStart() {
 					"class='googleplaylogo'/></a>" +
 					"<i>(Please note: may not available on Google Play if it's under Review)</i></p>";
 
-	var directory ="projects/brickmaniac";
-	var photosName = [ "photo_1.png", "photo_2.png", "photo_3.png"];
-	var photoClass = "project-photo";
-	var techStack = [ "Java", "Android", "SVN" ];
+	directory ="projects/brickmaniac";
+	photosName = [ "photo_1.png", "photo_2.png", "photo_3.png"];
+	photoClass = "project-photo";
+	techStack = [ "Java", "Android", "SVN" ];
 	
 	addProject(1, title, shortdesc, longdesc, directory, photosName, photoClass, techStack);
 
 	/* Add Footer */
-	var today = new Date().toLocaleDateString();
+	let today = new Date().toLocaleDateString();
 	addFooter(today);
 }
 
@@ -290,23 +279,23 @@ function addSectionTitle(text) {
 }
 
 function generateProjectGroups(titles) {
-	var body = document.getElementsByTagName("body")[0];
+	let body = document.getElementsByTagName("body")[0];
 	
-	for (var i = 0; i < titles.length; i++) {
+	for (let i = 0; i < titles.length; i++) {
 		body.innerHTML += "<div class='project-group'>" +
 			"<div class='project-group-title'>" + "<h2>~ " + titles[i] + " ~</h2>" + "</div></div>";			
 	}
 }
 
 function addProject(groupId, title, shortDesc, longDesc, directory, photosName, photoClass, techStack) {
-	var projectGroup = document.getElementsByClassName("project-group")[groupId];
+	let projectGroup = document.getElementsByClassName("project-group")[groupId];
 	
 	// Add project div
-	var toAdd = "<div class='project box'></div><br><hr class='project-divider'><br>";
+	let toAdd = "<div class='project box'></div><br><hr class='project-divider'><br>";
 	projectGroup.innerHTML += toAdd;
 	
-	var projects = document.getElementsByClassName("project");
-	var project = projects[projects.length-1];
+	let projects = document.getElementsByClassName("project");
+	let project = projects[projects.length-1];
 	
 	// Add title
 	addProjectTitle(project, title);
@@ -326,34 +315,34 @@ function addProject(groupId, title, shortDesc, longDesc, directory, photosName, 
 
 function addProjectTitle(project, title) {
 	// Add title
-	var toAdd = "<div class='project-title'>" + "<h3>" + title + "</h3></div>";
+	let toAdd = "<div class='project-title'>" + "<h3>" + title + "</h3></div>";
 	
 	project.innerHTML += toAdd;
 }
 
 function addProjectShortDesc(project, shortDesc) {		
 	// Add short description
-	var toAdd = "<div class='project-shortdesc'>" + "<p><i>" + shortDesc + "</i></p>" + "</div>";
+	let toAdd = "<div class='project-shortdesc'>" + "<p><i>" + shortDesc + "</i></p>" + "</div>";
 	
 	project.innerHTML += toAdd;
 }
 
 function addProjectLongDesc(project, longDesc) {
 	// Add long description
-	var toAdd = "<div class='project-longdesc'>" + longDesc + "</div><br>";
+	let toAdd = "<div class='project-longdesc'>" + longDesc + "</div><br>";
 	
 	project.innerHTML += toAdd;
 }
 
 function addProjectTechStack(project, techStack) {
-	var toAdd = "";
+	let toAdd = "";
 	
 	// Add tech stack	
 	if (techStack != null) {
 		toAdd += "<div class='project-techstack'>";
 		toAdd += "<ul class='tech-stack-list'>";
 		
-		for (var i = 0; i < techStack.length; i++) {
+		for (let i = 0; i < techStack.length; i++) {
 			toAdd += "<li>" + techStack[i] + "</li>";
 		}
 		
@@ -364,14 +353,14 @@ function addProjectTechStack(project, techStack) {
 }
 
 function addProjectPhotos(project, directory, photosName, photoClass) {
-	var toAdd = "";
+	let toAdd = "";
 	
 	// Add photos
 	if (photosName != null) {
 		toAdd += "<div class='project-photos'>"; 
 		
-		for (var i = 0; i < photosName.length; i++) {
-			var fullPhotoName = directory + "/" + photosName[i];
+		for (let i = 0; i < photosName.length; i++) {
+			let fullPhotoName = directory + "/" + photosName[i];
 			toAdd += "<a href='" + fullPhotoName + "' target='_blank'>" +
 					"<img src='" + fullPhotoName + "' class='" + photoClass + "' alt='Project Screenshot'></a>";	
 		}
@@ -383,7 +372,7 @@ function addProjectPhotos(project, directory, photosName, photoClass) {
 }
 
 function addHeader(prefix, title, subtitle) {
-	var body = document.getElementsByTagName("body")[0];
+	let body = document.getElementsByTagName("body")[0];
 	
 	body.innerHTML += 	"<header><div class='header'>" +
 						"<div class='header-prefix'>" + prefix + "</div>" +
@@ -393,21 +382,21 @@ function addHeader(prefix, title, subtitle) {
 }
 
 function addDivider() {
-	var body = document.getElementsByTagName("body")[0];
+	let body = document.getElementsByTagName("body")[0];
 	
 	body.innerHTML += "<hr class='project-divider'>";
 }
 
 
 function addMenu(items) {
-	var body = document.getElementsByTagName("body")[0];
+	let body = document.getElementsByTagName("body")[0];
 	
-	var toAdd = "";
+	let toAdd = "";
 	
 	toAdd +=   	"<div class='menuBox'>" +
 				"<ul class='menu-list'>";
 				
-	for (var i = 0; i < items.length; i++) {
+	for (let i = 0; i < items.length; i++) {
 		toAdd += "<li class='menu-item'><a href='#" + items[i] + "'>" + items[i] + "</a></li>"; 
 	}
 	
@@ -422,14 +411,14 @@ function addBoxAndTitle(title, text) {
 }
 
 function addBox(text) {
-	var body = document.getElementsByTagName("body")[0];
+	let body = document.getElementsByTagName("body")[0];
 	
 	body.innerHTML += 	"<div class='box'>" +
 						"<div class='box-content'>" +	text + "</div></div";
 }
 
 function addFooter(footer) {
-	var body = document.getElementsByTagName("body")[0];	
+	let body = document.getElementsByTagName("body")[0];	
 
 	body.innerHTML += "<footer class='footer'>" + footer + "</footer>";
 }
