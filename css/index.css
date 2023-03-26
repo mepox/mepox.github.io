@@ -1,6 +1,5 @@
 body {	
 	background-color: #0A192F;
-	/*font-family: Arial, Helvetica, sans-serif;*/
 	font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
 }
 
@@ -49,7 +48,7 @@ a:link, a:visited {
 
 /* MENU */
 
-.menuBox {
+/* .menuBox {
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
@@ -82,29 +81,29 @@ a:link, a:visited {
 
 .menu-item:hover {	
 	background-color: #0A192F;
-}
+} */
 
 /* ABOUT & SKILLS */
 
 .box {
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 	width: 50%;
 	background-color: #172A45;
 }
 
 .box-content {
-	padding: 50px;
+	padding: 15px;
 	color: #A8B2D1;	
+}
+
+.box-content ul {
+	padding-left: 15px;
 }
 
 /* PROJECTS */
 
 .project-group {
 	text-align: center;
-	/*width: 50%;
-	margin-left: auto;
-	margin-right: auto;*/
 }
 
 @media (max-width: 1300px){
@@ -179,8 +178,7 @@ a:link, a:visited {
 	max-width: 150px;	
 }
 
-.project-photo, .project-photo-big {
-	max-height: auto;
+.project-photo, .project-photo-big {	
 	margin-left: 5px;
 	border-radius: 5px;
 	border: 2px solid black;
@@ -199,6 +197,5 @@ a:link, a:visited {
 
 .googleplaylogo {
 	display: block;
-	max-width: 130px;
-	max-height: auto;	
+	max-width: 130px;		
 }
