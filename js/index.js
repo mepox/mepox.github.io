@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function onStart() {
     addHome();
     addSkills();
-    addProjects();
+    //addProjects();
 }
 
 function addHome() {
@@ -21,24 +21,17 @@ function addHome() {
                     "enjoy working collaboratively with others to develop innovative solutions that meet and exceed expectations."];
 
     // create section
-    let html = "<section id='home'>";    
-
-    // add main title
-    html += "<div id='title-container'>";
-    html += "<div id='prefix'>" + prefix + "</div>";
-    html += "<div id='name'>" + name + "</div>";
-    html += "</div>";
-
-    // add about me
+    let html = "<section id='intro'>";     
+      
+    html += "<h2 id='prefix'>" + prefix + "</h2>";
+    html += "<h1 id='name'>" + name + "</h1>";
     html += "<div id='aboutme'>";
-
     for (let i = 0; i < aboutme.length; i++) {
         html += "<p>";
         html += aboutme[i];
         html += "</p>";
     }
-
-    html += "</div>";
+    html += "</div>";    
 
     // close section
     html += "</section>";
@@ -63,10 +56,10 @@ function addSkills() {
     let html = "<section id='skills'>";
 
     // title
-    html += "<h1 class='section-title'>Skills</h1>";    
+    //html += "<h1 class='section-title'>Skills</h1>";   
 
     // skills container
-    html += "<div id='skills-container'>";
+    // html += "<div id='skill-cards-container'>";
 
     // create cards    
     for (let i = 0; i < skillData.length; i++) {
@@ -77,16 +70,24 @@ function addSkills() {
         card += "<p class='skill-card-title'>" + skillData[i].title + ":</p>";
 
         // add description
-        card += "<p class='skill-card-desc'>" + skillData[i].desc + "</p>";
+        card += "<p class='skill-card-desc'>" + skillData[i].desc + "</p>";        
+
+        // card += "<ul class='skill-card-list'>";
+        // let descArr = skillData[i].desc.split(",");
+        // for (let j = 0; j < descArr.length; j++) {
+        //     card += "<li>" + descArr[j] + "</li>";
+        // }
+        // card += "</ul>";
+        
 
         // close card
-        card += "</div>";
+        card += "</div>";        
         
         html += card;
     }
 
     // close skills container
-    html += "</div>";
+    // html += "</div>";
     
     // close section
     html += "</section>";    
