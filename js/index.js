@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function onStart() {
     addHome();
     addSkills();
-    //addProjects();
+    addProjects();
 }
 
 function addHome() {
@@ -56,38 +56,14 @@ function addSkills() {
     let html = "<section id='skills'>";
 
     // title
-    //html += "<h1 class='section-title'>Skills</h1>";   
-
-    // skills container
-    // html += "<div id='skill-cards-container'>";
-
-    // create cards    
+    html += "<h1 class='section-title'>SKILLS</h1>";
+    
+    // skills
     for (let i = 0; i < skillData.length; i++) {
-        // create card
-        let card = "<div class='skill-card'>";
-
-        // add title
-        card += "<p class='skill-card-title'>" + skillData[i].title + ":</p>";
-
-        // add description
-        card += "<p class='skill-card-desc'>" + skillData[i].desc + "</p>";        
-
-        // card += "<ul class='skill-card-list'>";
-        // let descArr = skillData[i].desc.split(",");
-        // for (let j = 0; j < descArr.length; j++) {
-        //     card += "<li>" + descArr[j] + "</li>";
-        // }
-        // card += "</ul>";
-        
-
-        // close card
-        card += "</div>";        
-        
-        html += card;
+        html += "<p>";
+        html += "<b>" + skillData[i].title + ": </b>" + skillData[i].desc;
+        html += "</p>";
     }
-
-    // close skills container
-    // html += "</div>";
     
     // close section
     html += "</section>";    
@@ -98,27 +74,60 @@ function addSkills() {
 function addProjects() {
     let projectsData = [];
     projectsData.push({ title: "FitBuddy",
-                        tags: "Java, Spring Boot, REST API, Lombok, Bootstrap 5, SQL, Git, Maven",
+                        tags: "Java, Spring Boot, REST API, HTML, CSS, JavaScript, Lombok, Bootstrap 5, SQL, Git, Maven",
                         shortDesc: "Workout Tracker app made with Spring Boot",
-                        cardPhotos: "projects/fitbuddy/fitbuddy_history.png" });
+                        cardPhotos: "projects/fitbuddy/fitbuddy_history.png",
+                        link: "projects/fitbuddy.html" });
+
+    projectsData.push({ title: "URL Shortener",
+                        tags: "Java, Spring Boot, REST API, HTML, CSS, JavaScript, SQL, Git, Maven",
+                        shortDesc: "URL Shortener app made with Spring Boot",
+                        cardPhotos: "projects/urlshortener/photo_2.png",
+                        link: "" });
+
+    projectsData.push({ title: "Game Of Moves",
+                        tags: "C#, Android, Unity, Git",
+                        shortDesc: "Multi-level puzzle game made with Unity", 
+                        cardPhotos: "projects/gameofmoves/photo_7.png",
+                        link: "" });
+                        
+    projectsData.push({ title: "Bouncy Ball",
+                        tags: "C#, Android, Unity, Git",
+                        shortDesc: "Casual action game made with Unity",
+                        cardPhotos: "projects/bouncyball/photo_1.png",
+                        link: "" });
+
+    projectsData.push({ title: "Brick Maniac",
+                        tags: "Java, Android, SVN",
+                        shortDesc: "Classic brick breaker game",
+                        cardPhotos: "projects/brickmaniac/photo_1.png",
+                        link: "" });
 
     // create section
     let html = "<section id='projects'>";
 
     // add title
-    html += "<h1 class='section-title'>Projects</h1>";
+    html += "<h1 class='section-title'>PROJECTS</h1>";
 
     // add container
-    html += "<div id='projects-container'>";
+    html += "<div id='project-cards-container'>";
 
     // add cards
     for (let i = 0; i < projectsData.length; i++) {
         // create card
         let card = "<div class='project-card'>";
 
-        card += "<p class='project-card-title'>" + projectsData[i].title + "</p>";
-        card += "<img class='project-card-img' src='" + projectsData[i].cardPhotos + "'>";
+        //card += "<div class='project-card-img-container'>";
+        card += "<img class='project-card-img' src='" + projectsData[i].cardPhotos + "'>";                
+        //card += "</div>";
+
+        card += "<div class='project-card-info'>";
+        card += "<p class='project-card-title'>" + projectsData[i].title + "</p>";        
         card += "<p class='project-card-short-desc'>" + projectsData[i].shortDesc + "</p>";
+        if (projectsData[i].link !== "") {
+            card += "<a href='" + projectsData[i].link + "'>View details</a>";
+        }
+        card += "</div>";
 
         // close card
         card += "</div>";
