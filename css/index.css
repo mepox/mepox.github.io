@@ -131,11 +131,11 @@ section {
 
 .project-card {
     display: grid;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 50% 50%;    
     align-items: center;
     text-align: center;
     width: 350px;
-    aspect-ratio: 1;    
+    aspect-ratio: 1;        
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;        
     padding: 1rem 1rem;    
@@ -143,13 +143,28 @@ section {
 
 .project-card-title {    
     font-weight: bold;
-    font-size: 18px;
+    font-size: 18px;    
+    margin-top: 0.5rem;
 }
 
 .project-card-img {          
     max-width: 100%;
-    max-height: 100%;    
+    max-height: 100%;
     margin: auto;    
+}
+
+.project-card-info button {
+    background-color: rgb(29, 100, 252);
+    color: white;
+    border: 1px solid black;
+    border: none;
+    border-radius: 10px;    
+    padding: 4% 8%;    
+}
+
+.project-card-info button:hover {
+    background-color: orange;
+    cursor: pointer;
 }
 
 /* -- PROJECT MODAL -- */
@@ -247,6 +262,14 @@ section {
     }
 
     .project-card {
-        width: 100%;  
+        width: 100%;        
+    }
+
+    .project-card-title {
+        font-size: 4.5vw;
+    }
+
+    .project-card-short-desc {
+        font-size: 3.5vw;
     }
 }
