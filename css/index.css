@@ -259,12 +259,17 @@ section {
 /* -- SCROLL UP -- */
 
 #scroll-up {
+    display: none;
     position: fixed;
     right: 2%;
     bottom: 3%;
     cursor: pointer;
     width: 3rem;
     height: 3rem;
+}
+
+#scroll-up.active {
+    display: block;
 }
 
 /* -- MEDIA -- */

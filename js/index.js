@@ -33,6 +33,20 @@ function onStart() {
             left: 0,
             behavior: "smooth"})
     });
+
+    // detect scrolling (for scroll up button)
+    document.addEventListener("scroll", handleScroll);
+}
+
+function handleScroll() {
+    let scrollUpButton = document.querySelector("#scroll-up");
+    let scrollTop  = document.documentElement.scrollTop;
+
+    if (scrollTop > 0) {
+        scrollUpButton.classList.add("active");
+    } else {
+        scrollUpButton.classList.remove("active");
+    }    
 }
 
 function fillProjectsData() {
