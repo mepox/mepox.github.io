@@ -301,7 +301,7 @@ function addFooter() {
 }
 
 function addScrollUpIcon() {
-    let html = "<img id='scroll-up' src='images/icons8-up-arrow-96.png' alt='Scroll up'>";
+    let html = "<img id='scroll-up' src='images/icons8-up-arrow-64-blue.png' alt='Scroll up'>";
 
     document.body.insertAdjacentHTML("beforeend", html);
 }
