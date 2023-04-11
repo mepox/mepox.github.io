@@ -64,7 +64,8 @@ function fillProjectsData() {
                 "<li>Completed tickets that involved writing unit tests for the project using JUnit and Mockito</li>" +
                 "<li>Implemented an account protection mechanism (one user must be root and cannot be deleted)</li>" +
                 "<li>Added a custom annotation to validate phone numbers using regex</li>" +
-                "<li>Reviewed new contributors' Pull Requests to ensure they follow the best coding practices</li>",
+                "<li>Reviewed new contributors' Pull Requests to ensure they follow the best coding practices</li>" +
+                "</ul>",
         projectImages: "projects/trebol/photo_1.png"
     });
 
