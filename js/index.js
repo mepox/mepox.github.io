@@ -9,6 +9,19 @@ function onStart() {
     addHome();
     addSkills();
     addProjects();
+
+    // add events for burger menu
+    const burgerMenu = document.querySelector("#burger-menu");
+    const menuItems = document.querySelector("#menu-items");
+
+    burgerMenu.addEventListener("click", () => {
+        menuItems.classList.toggle("active");
+        burgerMenu.classList.toggle("active");
+    });
+    menuItems.querySelectorAll("a").forEach(n => n.addEventListener("click", () => {
+        menuItems.classList.remove("active");
+        burgerMenu.classList.remove("active");
+    }));
 }
 
 function fillProjectsData() {
