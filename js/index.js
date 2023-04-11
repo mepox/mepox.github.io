@@ -253,7 +253,7 @@ function addProjects() {
         // create card
         let card = "<div class='project-card'>";
 
-        card += "<img class='project-card-img' src='" + projectsData[i].cardImage + "'>";                
+        card += "<img class='project-card-img' src='" + projectsData[i].cardImage + "' alt='Project Screenshot'>";                
 
         card += "<div class='project-card-info'>";
         card += "<p class='project-card-title'>" + projectsData[i].title + "</p>";        
@@ -330,7 +330,7 @@ function showProjectModal(title) {
     let imagesArr = projectData.projectImages.split(",");
     for (let i = 0; i < imagesArr.length; i++) {
         modal += "<a href='" + imagesArr[i] + "' target='_blank'>";
-        modal += "<img src='" + imagesArr[i] + "'>";
+        modal += "<img src='" + imagesArr[i] + "' alt='Project Screenshot'>";
         modal += "</a>";
     }
     modal += "</div>";
