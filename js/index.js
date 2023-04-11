@@ -65,7 +65,8 @@ function fillProjectsData() {
                 "<li>Implemented an account protection mechanism (one user must be root and cannot be deleted)</li>" +
                 "<li>Added a custom annotation to validate phone numbers using regex</li>" +
                 "<li>Reviewed new contributors' Pull Requests to ensure they follow the best coding practices</li>" +
-                "</ul>",
+                "</ul>" +
+                "<p><a href='https://github.com/trebol-ecommerce/trebol-backend-monolith' target='_blank'>View Source Code on GitHub</a></p>",
         projectImages: "projects/trebol/photo_1.png"
     });
 
