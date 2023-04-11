@@ -120,7 +120,7 @@ function fillProjectsData() {
                 "making it perfect for anyone looking for a mobile game that's both fun and challenging.</p>" +
 
                 "<p><a href='https://play.google.com/store/apps/details?id=com.pixelbits.thegameofmoves' target='_blank'> " +
-                "<img alt='Get it on Google Play' src='logos/googleplay.png' class='googleplaylogo'></a>" +
+                "<img alt='Get it on Google Play' src='images/googleplay.png' class='googleplaylogo'></a>" +
 				"<i>(Please note: may not available on Google Play if it's under Review)</i></p>",
         projectImages: "projects/gameofmoves/photo_1.png, " +
                        "projects/gameofmoves/photo_2.png, " +
@@ -149,7 +149,7 @@ function fillProjectsData() {
                 "making it perfect for anyone looking for a fun and engaging mobile gaming experience.</p>" +
 
                 "<p><a href='https://play.google.com/store/apps/details?id=com.laszlojanku.bouncyball' target='_blank'>" +
-                "<img alt='Get it on Google Play' src='logos/googleplay.png' class='googleplaylogo'></a>" +
+                "<img alt='Get it on Google Play' src='images/googleplay.png' class='googleplaylogo'></a>" +
 				"<i>(Please note: may not available on Google Play if it's under Review)</i></p>",
         projectImages: "projects/bouncyball/photo_1.png, " +
                        "projects/bouncyball/photo_2.png, " +
@@ -175,7 +175,7 @@ function fillProjectsData() {
                 "Whether looking to kill time or hone their skills, Brick Maniac offers endless hours of entertainment and fun.</p>" +
 
                 "<p><a href='https://play.google.com/store/apps/details?id=com.tupix.brickmaniacfree' target='_blank'>" +
-                "<img alt='Get it on Google Play' src='logos/googleplay.png' class='googleplaylogo'></a>" +
+                "<img alt='Get it on Google Play' src='images/googleplay.png' class='googleplaylogo'></a>" +
 				"<i>(Please note: may not available on Google Play if it's under Review)</i></p>",
         projectImages: "projects/brickmaniac/photo_1.png, " +
                        "projects/brickmaniac/photo_2.png, " +
@@ -195,7 +195,7 @@ function addHome() {
 
     // add home middle
     html += "<div id='home-middle'>";
-    html += "<img src='logos/intro.png' alt='Intro photo'>"
+    html += "<img src='images/intro.png' alt='Intro photo'>"
     html += "<div id='aboutme'>";
     html += "<h2>About Me</h2>";
     html += "<p>An enthusiastic <b>Software Developer</b> and <b>Indie Game Developer</b> with years of hands-on experience in various personal and commercial projects.</p>";
@@ -301,7 +301,7 @@ function addFooter() {
 }
 
 function addScrollUpIcon() {
-    let html = "<img id='scroll-up' src='logos/icons8-up-arrow-96.png' alt='Scroll up'>";
+    let html = "<img id='scroll-up' src='images/icons8-up-arrow-96.png' alt='Scroll up'>";
 
     document.body.insertAdjacentHTML("beforeend", html);
 }
