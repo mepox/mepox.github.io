@@ -325,9 +325,9 @@ function showProjectModal(title) {
     modal += "</div>";
 
     // close content and modal
-    modal += "</div></div>";
+    modal += "</div></div>";    
     
-    document.body.innerHTML += modal;
+    document.body.insertAdjacentHTML("beforeend", modal);
     document.body.style.overflow = "hidden";
 }
 
