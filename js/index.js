@@ -9,6 +9,7 @@ function onStart() {
     addHome();
     addSkills();
     addProjects();
+    addFooter();
 
     // add events for burger menu
     const burgerMenu = document.querySelector("#burger-menu");
@@ -278,6 +279,15 @@ function addProjects() {
     html += "</section>";
 
     document.body.innerHTML += html;
+}
+
+function addFooter() {
+    let year = new Date().getFullYear();
+    let html = "Copyright © " + year + " Laszlo Janku";
+
+    let footer = "<footer>" + html + "</footer>";
+
+    document.body.insertAdjacentHTML("beforeend", footer);
 }
 
 function getProjectDataByTitle(title) {
