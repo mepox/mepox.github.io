@@ -1,201 +1,315 @@
-body {	
-	background-color: #0A192F;
-	font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+* {
+    box-sizing: border-box;
 }
 
-a:link, a:visited {
-	font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
-	color: #71acff;	
+html {
+    scroll-behavior: smooth;
 }
 
-/* HEADER */
-
-.header {
-	text-align: center;
-	padding-top: 75px;	
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #444;
+    margin: 0 0 20px 0;    
 }
 
-.header-prefix {	
-	font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace;
-	color: #64FFDA;
-	font-weight: normal;
+/* -- TOP MENU -- */
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-.header-title {	
-	font-size: 64px;
-	font-weight: 700;
-	color: #CCD6F6;
+nav h1 {
+    color: #2978b5;
+    font-weight: 900;
+    margin: 0;
 }
 
-.header-subtitle {
-	font-size: 20px;
-	font-weight: 700;
-	color: #A8B2D1;
+nav a {
+    color: #444;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+nav a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+#menu-items {
+    display: flex;
+    gap: 2rem;
+}
+
+#burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;   
+}
+
+#burger-menu span {
+    margin-top: 4px;
+    padding: 2px 12px;
+    background-color: #444;
+}
+
+/* -- SECTIONS -- */
+
+section {    
+    margin: auto; 
+    margin-top: 5rem;    
+    padding: 0 8rem;
+    scroll-margin-top: 5rem;
 }
 
 .section-title {
-	margin-top: 50px;
-	text-align: center;
-	font-size: 48px;
-	font-weight: 700;	
-	color: #CCD6F6;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 3rem;
 }
 
-.footer {
-	text-align: center;
-	color: #CCD6F6;
+/* -- HOME TOP -- */
+
+#home-top {
+    text-align: center;    
 }
 
-/* MENU */
-
-/* .menuBox {
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-	background-color: #172A45;	
+#prefix {
+    font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace;    
+    font-size: 16px;    
+    margin: 0;
 }
 
-.menu-list {	
-	text-align: center;
-	list-style-type: none;
-  	margin-top: 50px;  	
-  	padding: 0;  	
-  	overflow: hidden;
+#my-name {        
+    color: #2978b5;
+    font-size: 64px;
+    margin: 0;
 }
 
-.menu-item:first-child {
-	border-left: 1px solid black;
+/* -- HOME MIDDLE -- */
+
+#home-middle {
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem;  
+    margin-top: 4.5rem;    
 }
 
-.menu-item {
-	display: inline-block;
-	padding: 15px;	
-	border-right: 1px solid black;
-	background-color: #172A45;	
+#home-middle img {
+    width: 100%;
+    max-width: 450px;    
+    border-radius: 10px;    
 }
 
-.menu-item a {  	
-  	text-decoration: none;
-  	color: #CCD6F6;	
+#aboutme {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    
+    padding: 1rem;
 }
 
-.menu-item:hover {	
-	background-color: #0A192F;
-} */
-
-/* ABOUT & SKILLS */
-
-.box {
-	margin: auto;
-	width: 50%;
-	background-color: #172A45;
+#aboutme h2 {
+    margin-top: 0;
 }
 
-.box-content {
-	padding: 15px;
-	color: #A8B2D1;	
+/* -- HOME BOTTOM -- */
+
+#home-bottom {
+    margin-top: 4.5rem;    
 }
 
-.box-content ul {
-	padding-left: 15px;
+#home-bottom h2 {
+    text-align: center;
 }
 
-/* PROJECTS */
+/* -- PROJECT CARDS -- */
 
-.project-group {
-	text-align: center;
+#project-cards-container { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;        
 }
 
-@media (max-width: 1300px){
-  .box {
-    width: 95%;
-  }
+.project-card {
+    display: grid;
+    grid-template-rows: 50% 50%;    
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    aspect-ratio: 1;        
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;        
+    padding: 1rem 1rem;    
 }
 
-.project-group-title h2 {
-	font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace;
-	font-weight: normal;
-	font-size: 13px;	
-	color: #64FFDA;	
+.project-card-title {    
+    font-weight: bold;
+    font-size: 18px;    
+    margin-top: 0.5rem;
 }
 
-.project {
-	padding-top: 20px;
-	padding-bottom: 20px;	
+.project-card-img {          
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;    
 }
 
-.project-title h3 {
-	margin-top: 0;
-	margin-bottom: 0;	
-	font-size: 150%;
-	color: #CCD6F6;	
+.project-card-info button {
+    background-color: rgb(29, 100, 252);
+    color: white;
+    border: 1px solid black;
+    border: none;
+    border-radius: 10px;    
+    padding: 4% 8%;    
 }
 
-.project-shortdesc {		
-	margin-left: auto;
-	margin-right: auto;
-	width: 95%;	
-	color: #A8B2D1;	
+.project-card-info button:hover {
+    background-color: orange;
+    cursor: pointer;
 }
 
-.project-longdesc {	
-	text-align: left;
-	margin-top: 30px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 95%;	
-	color: #A8B2D1;
+/* -- PROJECT MODAL -- */
+
+#project-modal {
+    position: fixed;
+    z-index: 1;    
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
 }
 
-.longdesc-list {
-	list-style-type: square;
+#project-modal-content {        
+    background-color: white;    
+    margin: 3rem 8rem 0 8rem;
+    padding: 2rem;
 }
 
-.tech-stack-list {		
-	display: block;	
-	text-align: center;
-	list-style: none;		
-	color: #64FFDA;
+#project-modal-close {        
+    color: red;
+    float: right;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
- .tech-stack-list li {
- 	display: inline-block;
- 	margin-top: 8px; 		
-	margin-left: 8px;
-	margin-right: 8px;
-	padding: 6px 6px;
-	font-family: SF Mono, Fira Code, Fira Mono, Roboto Mono, Lucida Console, Monaco, monospace;
-	font-weight: normal;
-	font-size: 13px;	
-	border: 1px solid #0A192F;	
+#project-modal-title {
+    text-align: center;
+    margin-top: 0;
 }
 
-.project-photo {
-	max-width: 100px;
+#project-modal-short-desc {
+    text-align: center;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
 }
 
-.project-photo-big {
-	max-width: 150px;	
+#project-modal-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;    
+    list-style-type: none;    
+    font-weight: bold;    
+    padding: 0;
 }
 
-.project-photo, .project-photo-big {	
-	margin-left: 5px;
-	border-radius: 5px;
-	border: 2px solid black;
-}
-
-.project-photo:hover, .project-photo-big:hover {
-	border: 2px solid coral;
-}
-
-.project-divider {
-	border: none;
-	height: 1px;
-	width: 25%;
-	background-color: #CCD6F6;
+#project-modal-tags li {
+    margin: 0.5rem;
 }
 
 .googleplaylogo {
-	display: block;
-	max-width: 130px;		
+    display: block;
+    width: 150px;
+}
+
+#project-modal-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;    
+    gap: 1rem;
+    margin-top: 4rem;    
+}
+
+#project-modal-images img {
+    max-width: 150px;    
+    border: 1px solid black;
+    border-radius: 10px;        
+}
+
+/* -- MEDIA -- */
+
+@media screen and (max-width: 1500px) {
+    section {
+        padding: 0 2rem;
+    }
+
+    #project-modal-content {
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
+
+    #menu-items {
+        order: 1;
+        display: none;        
+        width: 100%;      
+        flex-direction: column;
+        align-items: center;
+        background-color: white; 
+    }
+
+    #menu-items.active {
+        display: flex;
+    }
+
+    #burger-menu {
+        display: flex;
+    }
+
+    #burger-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #burger-menu.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        background-color: red;
+    }
+
+    #burger-menu.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        background-color: red;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .project-card {
+        width: 100%;        
+    }
+
+    .project-card-title {
+        font-size: 4.5vw;
+    }
+
+    .project-card-short-desc {
+        font-size: 3.5vw;
+    }
 }
