@@ -40,6 +40,21 @@ function fillProjectsData() {
                        "projects/fitbuddy/fitbuddy_register.png"        
         });
 
+    projectsData.push({
+        title: "Trebol eCommerce",
+        tags: "Java, Spring Boot, REST API, Lombok, Git, Maven",
+        shortDesc: "eCommerce backend API with Spring Boot",
+        cardImage: "projects/trebol/photo_1.png",
+        longDesc: "<p>Trebol is open source eCommerce web application. Backend API was made with Spring Boot and the Frontend with Angular framework.</p>" +
+                "<p>I participated as an open source contributor to the backend API.</p>" +
+                "<ul>" +
+                "<li>Completed tickets that involved writing unit tests for the project using JUnit and Mockito</li>" +
+                "<li>Implemented an account protection mechanism (one user must be root and cannot be deleted)</li>" +
+                "<li>Added a custom annotation to validate phone numbers using regex</li>" +
+                "<li>Reviewed new contributors' Pull Requests to ensure they follow the best coding practices</li>",
+        projectImages: "projects/trebol/photo_1.png"
+    });
+
     projectsData.push({ 
         title: "URL Shortener",
         tags: "Java, Spring Boot, REST API, HTML, CSS, JavaScript, SQL, Git, Maven",
