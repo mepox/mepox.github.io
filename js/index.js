@@ -10,6 +10,7 @@ function onStart() {
     addSkills();
     addProjects();
     addFooter();
+    addScrollUpIcon();
 
     // add events for burger menu
     const burgerMenu = document.querySelector("#burger-menu");
@@ -23,6 +24,15 @@ function onStart() {
         menuItems.classList.remove("active");
         burgerMenu.classList.remove("active");
     }));
+
+    // add events for scroll up
+    const scrollUp = document.querySelector("#scroll-up");
+    scrollUp.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"})
+    });
 }
 
 function fillProjectsData() {
@@ -288,6 +298,12 @@ function addFooter() {
     let footer = "<footer>" + html + "</footer>";
 
     document.body.insertAdjacentHTML("beforeend", footer);
+}
+
+function addScrollUpIcon() {
+    let html = "<img id='scroll-up' src='logos/icons8-up-arrow-96.png' alt='Scroll up'>";
+
+    document.body.insertAdjacentHTML("beforeend", html);
 }
 
 function getProjectDataByTitle(title) {
